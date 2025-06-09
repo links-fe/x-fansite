@@ -1,0 +1,2819 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --dark-brand-primary-00: #ffffff;
+  --dark-brand-primary-01: rgba(255, 255, 255, 0.62);
+  --dark-brand-primary-02: rgba(255, 255, 255, 0.38);
+  --dark-brand-primary-03: rgba(255, 255, 255, 0.24);
+  --dark-brand-primary-04: rgba(255, 255, 255, 0.15);
+  --dark-brand-primary-05: rgba(255, 255, 255, 0.09);
+  --dark-brand-primary-06: rgba(255, 255, 255, 0.05);
+  --dark-brand-primary-07: rgba(255, 255, 255, 0.04);
+  --dark-brand-primary-08: rgba(255, 255, 255, 0.02);
+  --dark-brand-secondary-00: #adebdf;
+  --dark-brand-secondary-01: rgba(173, 235, 223, 0.62);
+  --dark-brand-secondary-02: rgba(173, 235, 223, 0.38);
+  --dark-brand-secondary-03: rgba(173, 235, 223, 0.24);
+  --dark-brand-secondary-04: rgba(173, 235, 223, 0.15);
+  --dark-brand-secondary-05: rgba(173, 235, 223, 0.09);
+  --dark-brand-secondary-06: rgba(173, 235, 223, 0.05);
+  --dark-brand-secondary-07: rgba(173, 235, 223, 0.04);
+  --dark-brand-secondary-08: rgba(173, 235, 223, 0.02);
+  --dark-spectrum-saffron-00: #e25046;
+  --dark-spectrum-saffron-01: rgba(226, 80, 70, 0.62);
+  --dark-spectrum-saffron-02: rgba(226, 80, 70, 0.38);
+  --dark-spectrum-saffron-03: rgba(226, 80, 70, 0.24);
+  --dark-spectrum-saffron-04: rgba(226, 80, 70, 0.15);
+  --dark-spectrum-saffron-05: rgba(234, 99, 87, 0.09);
+  --dark-spectrum-saffron-06: rgba(234, 99, 87, 0.05);
+  --dark-spectrum-saffron-07: rgba(234, 99, 87, 0.04);
+  --dark-spectrum-saffron-08: rgba(234, 99, 87, 0.02);
+  --dark-spectrum-ocean-00: #0586c2;
+  --dark-spectrum-ocean-01: rgba(5, 134, 194, 0.62);
+  --dark-spectrum-ocean-02: rgba(5, 134, 194, 0.38);
+  --dark-spectrum-ocean-03: rgba(5, 134, 194, 0.24);
+  --dark-spectrum-ocean-04: rgba(5, 134, 194, 0.15);
+  --dark-spectrum-ocean-05: rgba(5, 134, 194, 0.09);
+  --dark-spectrum-ocean-06: rgba(5, 134, 194, 0.05);
+  --dark-spectrum-ocean-07: rgba(5, 134, 194, 0.04);
+  --dark-spectrum-ocean-08: rgba(5, 134, 194, 0.02);
+  --dark-spectrum-peony-00: #d548a6;
+  --dark-spectrum-peony-01: rgba(213, 72, 166, 0.62);
+  --dark-spectrum-peony-02: rgba(213, 72, 166, 0.38);
+  --dark-spectrum-peony-03: rgba(213, 72, 166, 0.24);
+  --dark-spectrum-peony-04: rgba(213, 72, 166, 0.15);
+  --dark-spectrum-peony-05: rgba(213, 72, 166, 0.09);
+  --dark-spectrum-peony-06: rgba(213, 72, 166, 0.05);
+  --dark-spectrum-peony-07: rgba(213, 72, 166, 0.04);
+  --dark-spectrum-peony-08: rgba(213, 72, 166, 0.02);
+  --dark-spectrum-cinnamon-00: #956e04;
+  --dark-spectrum-cinnamon-01: rgba(149, 110, 4, 0.62);
+  --dark-spectrum-cinnamon-02: rgba(149, 110, 4, 0.38);
+  --dark-spectrum-cinnamon-03: rgba(149, 110, 4, 0.24);
+  --dark-spectrum-cinnamon-04: rgba(149, 110, 4, 0.15);
+  --dark-spectrum-cinnamon-05: rgba(149, 110, 4, 0.09);
+  --dark-spectrum-cinnamon-06: rgba(149, 110, 4, 0.05);
+  --dark-spectrum-cinnamon-07: rgba(149, 110, 4, 0.04);
+  --dark-spectrum-cinnamon-08: rgba(149, 110, 4, 0.02);
+  --dark-spectrum-lichen-00: #4c8740;
+  --dark-spectrum-lichen-01: rgba(76, 135, 64, 0.62);
+  --dark-spectrum-lichen-02: rgba(76, 135, 64, 0.38);
+  --dark-spectrum-lichen-03: rgba(76, 135, 64, 0.24);
+  --dark-spectrum-lichen-04: rgba(76, 135, 64, 0.15);
+  --dark-spectrum-lichen-05: rgba(76, 135, 64, 0.09);
+  --dark-spectrum-lichen-06: rgba(76, 135, 64, 0.05);
+  --dark-spectrum-lichen-07: rgba(76, 135, 64, 0.04);
+  --dark-spectrum-lichen-08: rgba(76, 135, 64, 0.02);
+  --dark-spectrum-aurora-00: #038175;
+  --dark-spectrum-aurora-01: rgba(3, 129, 117, 0.62);
+  --dark-spectrum-aurora-02: rgba(3, 129, 117, 0.38);
+  --dark-spectrum-aurora-03: rgba(3, 129, 117, 0.24);
+  --dark-spectrum-aurora-04: rgba(3, 129, 117, 0.15);
+  --dark-spectrum-aurora-05: rgba(3, 129, 117, 0.09);
+  --dark-spectrum-aurora-06: rgba(3, 129, 117, 0.05);
+  --dark-spectrum-aurora-07: rgba(3, 129, 117, 0.04);
+  --dark-spectrum-aurora-08: rgba(3, 129, 117, 0.02);
+  --dark-spectrum-wisteria-00: #5477e8;
+  --dark-spectrum-wisteria-01: rgba(84, 119, 232, 0.62);
+  --dark-spectrum-wisteria-02: rgba(84, 119, 232, 0.38);
+  --dark-spectrum-wisteria-03: rgba(84, 119, 232, 0.24);
+  --dark-spectrum-wisteria-04: rgba(84, 119, 232, 0.15);
+  --dark-spectrum-wisteria-05: rgba(84, 119, 232, 0.09);
+  --dark-spectrum-wisteria-06: rgba(84, 119, 232, 0.05);
+  --dark-spectrum-wisteria-07: rgba(84, 119, 232, 0.04);
+  --dark-spectrum-wisteria-08: rgba(84, 119, 232, 0.02);
+  --dark-spectrum-all: linear-gradient(90deg, #d548a6 0%, #e25046 17%, #4c8740 33%, #038175 50%, #0586c2, #5477e8 100%);
+  --draggable-origin: 0.38;
+  --font-family-dm-sans: 'DM Sans';
+  --font-family-dm-mono: 'DM Mono';
+  --font-weight-dm-sans-black: 900;
+  --font-weight-dm-sans-bold: 700;
+  --font-weight-dm-sans-extrabold: 800;
+  --font-weight-dm-sans-extralight: 200;
+  --font-weight-dm-sans-light: 300;
+  --font-weight-dm-sans-medium: 500;
+  --font-weight-dm-sans-regular: 400;
+  --font-weight-dm-sans-semibold: 600;
+  --font-weight-dm-sans-thin: 100;
+  --font-weight-dm-mono-light: 300;
+  --font-weight-dm-mono-medium: 500;
+  --font-weight-dm-mono-regular: 400;
+  --grayscale-black-00: #000000;
+  --grayscale-black-01: rgba(0, 0, 0, 0.62);
+  --grayscale-black-02: rgba(0, 0, 0, 0.38);
+  --grayscale-black-03: rgba(0, 0, 0, 0.24);
+  --grayscale-black-04: rgba(0, 0, 0, 0.15);
+  --grayscale-black-05: rgba(0, 0, 0, 0.09);
+  --grayscale-black-06: rgba(0, 0, 0, 0.05);
+  --grayscale-black-07: rgba(0, 0, 0, 0.04);
+  --grayscale-black-08: rgba(0, 0, 0, 0.02);
+  --grayscale-black-opaque-00: #000000;
+  --grayscale-black-opaque-01: #616161;
+  --grayscale-black-opaque-02: #9e9e9e;
+  --grayscale-black-opaque-03: #c2c2c2;
+  --grayscale-black-opaque-04: #d9d9d9;
+  --grayscale-black-opaque-05: #e8e8e8;
+  --grayscale-black-opaque-06: #f2f2f2;
+  --grayscale-black-opaque-07: #f5f5f5;
+  --grayscale-black-opaque-08: #fafafa;
+  --grayscale-white-00: #ffffff;
+  --grayscale-white-01: rgba(255, 255, 255, 0.62);
+  --grayscale-white-02: rgba(255, 255, 255, 0.38);
+  --grayscale-white-03: rgba(255, 255, 255, 0.24);
+  --grayscale-white-04: rgba(255, 255, 255, 0.15);
+  --grayscale-white-05: rgba(255, 255, 255, 0.09);
+  --grayscale-white-06: rgba(255, 255, 255, 0.05);
+  --grayscale-white-07: rgba(255, 255, 255, 0.04);
+  --grayscale-white-08: rgba(255, 255, 255, 0.02);
+  --grayscale-white-opaque-00: #ffffff;
+  --grayscale-white-opaque-01: #9e9e9e;
+  --grayscale-white-opaque-02: #616161;
+  --grayscale-white-opaque-03: #3d3d3d;
+  --grayscale-white-opaque-04: #262626;
+  --grayscale-white-opaque-05: #171717;
+  --grayscale-white-opaque-06: #0d0d0d;
+  --grayscale-white-opaque-07: #0a0a0a;
+  --grayscale-white-opaque-08: #050505;
+  --icon-bold-border-width: 3px;
+  --icon-light-border-width: 1px;
+  --icon-medium-border-width: 2px;
+  --icon-regular-border-width: 1.5px;
+  --icon-thin-border-width: 0.5px;
+  --light-brand-primary-00: #000000;
+  --light-brand-primary-01: rgba(0, 0, 0, 0.62);
+  --light-brand-primary-02: rgba(0, 0, 0, 0.38);
+  --light-brand-primary-03: rgba(0, 0, 0, 0.24);
+  --light-brand-primary-04: rgba(0, 0, 0, 0.15);
+  --light-brand-primary-05: rgba(0, 0, 0, 0.09);
+  --light-brand-primary-06: rgba(0, 0, 0, 0.05);
+  --light-brand-primary-07: rgba(0, 0, 0, 0.04);
+  --light-brand-primary-08: rgba(0, 0, 0, 0.02);
+  --light-brand-secondary-00: #269c85;
+  --light-brand-secondary-01: rgba(38, 156, 133, 0.62);
+  --light-brand-secondary-02: rgba(38, 156, 133, 0.38);
+  --light-brand-secondary-03: rgba(38, 156, 133, 0.24);
+  --light-brand-secondary-04: rgba(38, 156, 133, 0.15);
+  --light-brand-secondary-05: rgba(38, 156, 133, 0.09);
+  --light-brand-secondary-06: rgba(38, 156, 133, 0.05);
+  --light-brand-secondary-07: rgba(38, 156, 133, 0.04);
+  --light-brand-secondary-08: rgba(38, 156, 133, 0.02);
+  --light-spectrum-saffron-00: #ea6357;
+  --light-spectrum-saffron-01: rgba(234, 99, 87, 0.62);
+  --light-spectrum-saffron-02: rgba(234, 99, 87, 0.38);
+  --light-spectrum-saffron-03: rgba(234, 99, 87, 0.24);
+  --light-spectrum-saffron-04: rgba(234, 99, 87, 0.15);
+  --light-spectrum-saffron-05: rgba(234, 99, 87, 0.09);
+  --light-spectrum-saffron-06: rgba(234, 99, 87, 0.05);
+  --light-spectrum-saffron-07: rgba(234, 99, 87, 0.04);
+  --light-spectrum-saffron-08: rgba(234, 99, 87, 0.02);
+  --light-spectrum-ocean-00: #0094de;
+  --light-spectrum-ocean-01: rgba(0, 148, 222, 0.62);
+  --light-spectrum-ocean-02: rgba(0, 148, 222, 0.38);
+  --light-spectrum-ocean-03: rgba(0, 148, 222, 0.24);
+  --light-spectrum-ocean-04: rgba(0, 148, 222, 0.15);
+  --light-spectrum-ocean-05: rgba(0, 148, 222, 0.09);
+  --light-spectrum-ocean-06: rgba(0, 148, 222, 0.05);
+  --light-spectrum-ocean-07: rgba(0, 148, 222, 0.04);
+  --light-spectrum-ocean-08: rgba(0, 148, 222, 0.02);
+  --light-spectrum-peony-00: #df5ab0;
+  --light-spectrum-peony-01: rgba(223, 90, 176, 0.62);
+  --light-spectrum-peony-02: rgba(223, 90, 176, 0.38);
+  --light-spectrum-peony-03: rgba(223, 90, 176, 0.24);
+  --light-spectrum-peony-04: rgba(223, 90, 176, 0.15);
+  --light-spectrum-peony-05: rgba(223, 90, 176, 0.09);
+  --light-spectrum-peony-06: rgba(223, 90, 176, 0.05);
+  --light-spectrum-peony-07: rgba(223, 90, 176, 0.04);
+  --light-spectrum-peony-08: rgba(223, 90, 176, 0.02);
+  --light-spectrum-cinnamon-00: #b28700;
+  --light-spectrum-cinnamon-01: rgba(178, 135, 0, 0.62);
+  --light-spectrum-cinnamon-02: rgba(178, 135, 0, 0.38);
+  --light-spectrum-cinnamon-03: rgba(178, 135, 0, 0.24);
+  --light-spectrum-cinnamon-04: rgba(178, 135, 0, 0.15);
+  --light-spectrum-cinnamon-05: rgba(178, 135, 0, 0.09);
+  --light-spectrum-cinnamon-06: rgba(178, 135, 0, 0.05);
+  --light-spectrum-cinnamon-07: rgba(178, 135, 0, 0.04);
+  --light-spectrum-cinnamon-08: rgba(178, 135, 0, 0.02);
+  --light-spectrum-lichen-00: #509e42;
+  --light-spectrum-lichen-01: rgba(80, 158, 66, 0.62);
+  --light-spectrum-lichen-02: rgba(80, 158, 66, 0.38);
+  --light-spectrum-lichen-03: rgba(80, 158, 66, 0.24);
+  --light-spectrum-lichen-04: rgba(80, 158, 66, 0.15);
+  --light-spectrum-lichen-05: rgba(80, 158, 66, 0.09);
+  --light-spectrum-lichen-06: rgba(80, 158, 66, 0.05);
+  --light-spectrum-lichen-07: rgba(80, 158, 66, 0.04);
+  --light-spectrum-lichen-08: rgba(80, 158, 66, 0.02);
+  --light-spectrum-aurora-00: #009e90;
+  --light-spectrum-aurora-01: rgba(0, 158, 144, 0.62);
+  --light-spectrum-aurora-02: rgba(0, 158, 144, 0.38);
+  --light-spectrum-aurora-03: rgba(0, 158, 144, 0.24);
+  --light-spectrum-aurora-04: rgba(0, 158, 144, 0.15);
+  --light-spectrum-aurora-05: rgba(0, 158, 144, 0.09);
+  --light-spectrum-aurora-06: rgba(0, 158, 144, 0.05);
+  --light-spectrum-aurora-07: rgba(0, 158, 144, 0.04);
+  --light-spectrum-aurora-08: rgba(0, 158, 144, 0.02);
+  --light-spectrum-wisteria-00: #6987ef;
+  --light-spectrum-wisteria-01: rgba(105, 135, 239, 0.62);
+  --light-spectrum-wisteria-02: rgba(105, 135, 239, 0.38);
+  --light-spectrum-wisteria-03: rgba(105, 135, 239, 0.24);
+  --light-spectrum-wisteria-04: rgba(105, 135, 239, 0.15);
+  --light-spectrum-wisteria-05: rgba(105, 135, 239, 0.09);
+  --light-spectrum-wisteria-06: rgba(105, 135, 239, 0.05);
+  --light-spectrum-wisteria-07: rgba(105, 135, 239, 0.04);
+  --light-spectrum-wisteria-08: rgba(105, 135, 239, 0.02);
+  --light-spectrum-all: linear-gradient(
+    90deg,
+    #df5ab0 0%,
+    #ea6357 17%,
+    #509e42 33%,
+    #009e90 50%,
+    #0094de,
+    #6987ef 100%
+  );
+  --named-intermediate: 20px;
+  --named-large: 32px;
+  --named-medium: 24px;
+  --named-micro: 8px;
+  --named-mini: 12px;
+  --named-moderate: 28px;
+  --named-nano: 4px;
+  --named-pico: 2px;
+  --named-small: 16px;
+  --shadow-level-00:
+    0 31.333px 23px 0 rgba(0, 0, 0, 0.09), 0 9.446px 6.934px 0 rgba(0, 0, 0, 0.05),
+    0 3.923px 2.88px 0 rgba(0, 0, 0, 0.04), 0 1.419px 1.042px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-level-01:
+    0 62.667px 46px 0 rgba(0, 0, 0, 0.09), 0 18.891px 13.867px 0 rgba(0, 0, 0, 0.05),
+    0 7.847px 5.76px 0 rgba(0, 0, 0, 0.04), 0 2.838px 2.083px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-level-02:
+    0 94px 69px 0 rgba(0, 0, 0, 0.09), 0 28.338px 20.801px 0 rgba(0, 0, 0, 0.05),
+    0 11.77px 8.64px 0 rgba(0, 0, 0, 0.04), 0 4.257px 3.125px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sheet-00:
+    0 -31.333px 23px 0 rgba(0, 0, 0, 0.09), 0 -9.446px 6.934px 0 rgba(0, 0, 0, 0.05),
+    0 -3.923px 2.88px 0 rgba(0, 0, 0, 0.04), 0 -1.419px 1.042px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sheet-01:
+    0 -62.667px 46px 0 rgba(0, 0, 0, 0.09), 0 -18.891px 13.867px 0 rgba(0, 0, 0, 0.05),
+    0 -7.847px 5.76px 0 rgba(0, 0, 0, 0.04), 0 -2.838px 2.083px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sheet-02:
+    0 -94px 69px 0 rgba(0, 0, 0, 0.09), 0 -28.338px 20.801px 0 rgba(0, 0, 0, 0.05),
+    0 -11.77px 8.64px 0 rgba(0, 0, 0, 0.04), 0 -4.257px 3.125px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --sizing-named-abundant: 40px;
+  --sizing-named-colossal: 112px;
+  --sizing-named-cosmic: 192px;
+  --sizing-named-galactic: 160px;
+  --sizing-named-generous: 36px;
+  --sizing-named-giant: 80px;
+  --sizing-named-grand: 72px;
+  --sizing-named-great: 56px;
+  --sizing-named-half: 50%;
+  --sizing-named-bigforpill: 9999px;
+  --sizing-named-intermediate: 20px;
+  --sizing-named-huge: 48px;
+  --sizing-named-jumbo: 64px;
+  --sizing-named-large: 32px;
+  --sizing-named-massive: 96px;
+  --sizing-named-medium: 24px;
+  --sizing-named-micro: 8px;
+  --sizing-named-mini: 12px;
+  --sizing-named-moderate: 28px;
+  --sizing-named-nano: 4px;
+  --sizing-named-pico: 2px;
+  --sizing-named-planetary: 128px;
+  --sizing-named-small: 16px;
+  --sizing-named-stellar: 144px;
+  --sizing-unit: 8px;
+  --surface-01-radius: 12px;
+  --surface-pill: 50%;
+  --test: -4px;
+  --typography-numbers-body1-base: 400 16px/1.25 'DM Mono';
+  --typography-numbers-body1-strong: 500 16px/1.25 'DM Mono';
+  --typography-numbers-body2-base: 400 14px/1.1428571428571428 'DM Mono';
+  --typography-numbers-body2-strong: 500 14px/1.1428571428571428 'DM Mono';
+  --typography-numbers-caption1-base: 400 12px/1.1666666666666667 'DM Mono';
+  --typography-numbers-caption1-strong: 500 12px/1.1666666666666667 'DM Mono';
+  --typography-numbers-caption2-base: 400 11px/1.0909090909090908 'DM Mono';
+  --typography-numbers-caption2-strong: 500 11px/1.0909090909090908 'DM Mono';
+  --typography-numbers-caption3-strong: 500 10px/1.2 'DM Mono';
+  --typography-numbers-display1-base: 500 48px/1 'DM Mono';
+  --typography-numbers-display2-base: 500 40px/1 'DM Mono';
+  --typography-numbers-display3-base: 500 36px/1 'DM Mono';
+  --typography-numbers-stub-strong: 500 10px/1.2 'DM Mono';
+  --typography-text-body0-open: 400 18px/1.3333333333333333 'DM Sans';
+  --typography-text-body1-base: 400 16px/1.25 'DM Sans';
+  --typography-text-body1-open: 400 16px/1.5 'DM Sans';
+  --typography-text-body1-strong: 600 16px/1.25 'DM Sans';
+  --typography-text-body2-base: 400 14px/1.1428571428571428 'DM Sans';
+  --typography-text-body2-open: 400 14px/1.5 'DM Sans';
+  --typography-text-body2-strong: 600 14px/1.1428571428571428 'DM Sans';
+  --typography-text-caption1-base: 400 12px/1.1666666666666667 'DM Sans';
+  --typography-text-caption1-strong: 600 12px/1.1666666666666667 'DM Sans';
+  --typography-text-caption2-base: 400 11px/1.0909090909090908 'DM Sans';
+  --typography-text-caption2-strong: 600 11px/1.0909090909090908 'DM Sans';
+  --typography-text-caption3-strong: 600 10px/1.2 'DM Sans';
+  --typography-text-display1-base: 500 48px/1.1666666666666667 'DM Sans';
+  --typography-text-display2-base: 500 40px/1.2 'DM Sans';
+  --typography-text-display3-base: 500 36px/1.1111111111111112 'DM Sans';
+  --typography-text-heading1-base: 500 32px/1.125 'DM Sans';
+  --typography-text-heading1-strong: 600 32px/1.125 'DM Sans';
+  --typography-text-heading2-base: 500 28px/1.1428571428571428 'DM Sans';
+  --typography-text-heading2-strong: 600 28px/1.1428571428571428 'DM Sans';
+  --typography-text-heading3-base: 500 24px/1.1666666666666667 'DM Sans';
+  --typography-text-heading3-strong: 600 24px/1.1666666666666667 'DM Sans';
+  --typography-text-heading4-strong: 600 20px/1.2 'DM Sans';
+  --typography-text-stub-strong: 600 10px/1.2 'DM Sans';
+  --animation-switch-knob-duration: 0.23s;
+  --animation-switch-knob-easing: cubic-bezier(0.33, 1, 0.68, 1);
+  --animation-switch-track-duration: 0.38s;
+  --animation-switch-track-easing: cubic-bezier(0.33, 1, 0.68, 1);
+  --control-generous-border-radius: 8px;
+  --control-generous-padding-both: 8px;
+  --control-generous-padding-horizontal: 12px;
+  --control-generous-padding-vertical: 8px;
+  --control-great-border-radius: 12px;
+  --control-great-padding-both: 16px;
+  --control-great-padding-horizontal: 18px;
+  --control-great-padding-vertical: 16px;
+  --control-jumbo-border-radius: 12px;
+  --control-grand-border-radius: 16px;
+  --control-giant-border-radius: 16px;
+  --control-massive-border-radius: 20px;
+  --control-huge-border-radius: 10px;
+  --control-huge-padding-both: 14px;
+  --control-huge-padding-horizontal: 16px;
+  --control-huge-padding-vertical: 14px;
+  --control-intermediate-padding-both: 4px;
+  --control-intermediate-padding-horizontal: 6px;
+  --control-intermediate-padding-vertical: 4px;
+  --control-medium-border-radius: 4px;
+  --control-medium-padding-both: 5px;
+  --control-medium-padding-horizontal: 8px;
+  --control-medium-padding-vertical: 5px;
+  --control-moderate-border-radius: 6px;
+  --control-moderate-padding-both: 6px;
+  --control-moderate-padding-horizontal: 9px;
+  --control-moderate-padding-vertical: 6px;
+  --control-pill-border-radius: 9999px;
+  --control-small-padding-both: 2px;
+  --control-small-padding-horizontal: 4px;
+  --control-small-padding-vertical: 2px;
+  --control-border-width: 1px;
+  --control-large-border-radius: 6px;
+  --controls-generous-min-height: 36px;
+  --controls-generous-min-width: 36px;
+  --controls-great-min-height: 56px;
+  --controls-great-min-width: 56px;
+  --controls-huge-min-height: 48px;
+  --controls-huge-min-width: 48px;
+  --controls-level-00-shadow:
+    0 31.333px 23px 0 rgba(0, 0, 0, 0.09), 0 9.446px 6.934px 0 rgba(0, 0, 0, 0.05),
+    0 3.923px 2.88px 0 rgba(0, 0, 0, 0.04), 0 1.419px 1.042px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --controls-level-01-shadow:
+    0 62.667px 46px 0 rgba(0, 0, 0, 0.09), 0 18.891px 13.867px 0 rgba(0, 0, 0, 0.05),
+    0 7.847px 5.76px 0 rgba(0, 0, 0, 0.04), 0 2.838px 2.083px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --controls-level-02-shadow:
+    0 94px 69px 0 rgba(0, 0, 0, 0.09), 0 28.338px 20.801px 0 rgba(0, 0, 0, 0.05),
+    0 11.77px 8.64px 0 rgba(0, 0, 0, 0.04), 0 4.257px 3.125px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --controls-medium-min-height: 24px;
+  --controls-medium-min-width: 24px;
+  --controls-moderate-min-height: 28px;
+  --controls-moderate-min-width: 28px;
+  --controls-intermediate-min-height: 20px;
+  --controls-intermediate-min-width: 20px;
+  --controls-small-min-height: 16px;
+  --controls-small-min-width: 16px;
+  --message-generous-border-radius: 18px;
+  --message-generous-padding-horizontal: 12px;
+  --message-generous-padding-vertical: 8px;
+  --message-great-border-radius: 28px;
+  --message-great-padding-horizontal: 20px;
+  --message-great-padding-vertical: 14px;
+  --message-huge-border-radius: 24px;
+  --message-huge-padding-horizontal: 16px;
+  --message-huge-padding-vertical: 12px;
+  --message-max-width: 720px;
+  --message-large-padding-horizontal: 8px;
+  --message-large-padding-vertical: 6px;
+  --primitives-divider-thickness: 1px;
+  --modal-small-max-width: 480px;
+  --modal-medium-max-width: 600px;
+  --modal-large-max-width: 992px;
+  --pulser-mini-width: 24px;
+  --pulser-mini-height: 12px;
+  --pulser-micro-width: 16px;
+  --pulser-micro-height: 8px;
+  --pulser-small-width: 32px;
+  --pulser-small-height: 16px;
+  --pulser-intermediate-width: 32px;
+  --pulser-intermediate-height: 20px;
+  --element-disabled-opacity: 0.24;
+  --window-tab-max-width: 112px;
+  --thumbnail-extra-small-width: 112px;
+  --thumbnail-extra-small-height: 112px;
+  --thumbnail-extra-small-border-radius: 8px;
+  --thumbnail-small-width: 192px;
+  --thumbnail-small-height: 192px;
+  --thumbnail-small-border-radius: 12px;
+  --thumbnail-medium-width: 280px;
+  --thumbnail-medium-height: 280px;
+  --thumbnail-medium-border-radius: 16px;
+  --thumbnail-large-width: 320px;
+  --thumbnail-large-height: 320px;
+  --thumbnail-large-border-radius: 20px;
+  --thumbnail-extra-large-width: 360px;
+  --thumbnail-extra-large-height: 360px;
+  --thumbnail-extra-large-border-radius: 24px;
+}
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+.theme-dark {
+  --dark-brand-primary-00: #ffffff;
+  --dark-brand-primary-01: rgba(255, 255, 255, 0.62);
+  --dark-brand-primary-02: rgba(255, 255, 255, 0.38);
+  --dark-brand-primary-03: rgba(255, 255, 255, 0.24);
+  --dark-brand-primary-04: rgba(255, 255, 255, 0.15);
+  --dark-brand-primary-05: rgba(255, 255, 255, 0.09);
+  --dark-brand-primary-06: rgba(255, 255, 255, 0.05);
+  --dark-brand-primary-07: rgba(255, 255, 255, 0.04);
+  --dark-brand-primary-08: rgba(255, 255, 255, 0.02);
+  --dark-brand-secondary-00: #adebdf;
+  --dark-brand-secondary-01: rgba(173, 235, 223, 0.62);
+  --dark-brand-secondary-02: rgba(173, 235, 223, 0.38);
+  --dark-brand-secondary-03: rgba(173, 235, 223, 0.24);
+  --dark-brand-secondary-04: rgba(173, 235, 223, 0.15);
+  --dark-brand-secondary-05: rgba(173, 235, 223, 0.09);
+  --dark-brand-secondary-06: rgba(173, 235, 223, 0.05);
+  --dark-brand-secondary-07: rgba(173, 235, 223, 0.04);
+  --dark-brand-secondary-08: rgba(173, 235, 223, 0.02);
+  --dark-spectrum-saffron-00: #e25046;
+  --dark-spectrum-saffron-01: rgba(226, 80, 70, 0.62);
+  --dark-spectrum-saffron-02: rgba(226, 80, 70, 0.38);
+  --dark-spectrum-saffron-03: rgba(226, 80, 70, 0.24);
+  --dark-spectrum-saffron-04: rgba(226, 80, 70, 0.15);
+  --dark-spectrum-saffron-05: rgba(234, 99, 87, 0.09);
+  --dark-spectrum-saffron-06: rgba(234, 99, 87, 0.05);
+  --dark-spectrum-saffron-07: rgba(234, 99, 87, 0.04);
+  --dark-spectrum-saffron-08: rgba(234, 99, 87, 0.02);
+  --dark-spectrum-ocean-00: #0586c2;
+  --dark-spectrum-ocean-01: rgba(5, 134, 194, 0.62);
+  --dark-spectrum-ocean-02: rgba(5, 134, 194, 0.38);
+  --dark-spectrum-ocean-03: rgba(5, 134, 194, 0.24);
+  --dark-spectrum-ocean-04: rgba(5, 134, 194, 0.15);
+  --dark-spectrum-ocean-05: rgba(5, 134, 194, 0.09);
+  --dark-spectrum-ocean-06: rgba(5, 134, 194, 0.05);
+  --dark-spectrum-ocean-07: rgba(5, 134, 194, 0.04);
+  --dark-spectrum-ocean-08: rgba(5, 134, 194, 0.02);
+  --dark-spectrum-peony-00: #d548a6;
+  --dark-spectrum-peony-01: rgba(213, 72, 166, 0.62);
+  --dark-spectrum-peony-02: rgba(213, 72, 166, 0.38);
+  --dark-spectrum-peony-03: rgba(213, 72, 166, 0.24);
+  --dark-spectrum-peony-04: rgba(213, 72, 166, 0.15);
+  --dark-spectrum-peony-05: rgba(213, 72, 166, 0.09);
+  --dark-spectrum-peony-06: rgba(213, 72, 166, 0.05);
+  --dark-spectrum-peony-07: rgba(213, 72, 166, 0.04);
+  --dark-spectrum-peony-08: rgba(213, 72, 166, 0.02);
+  --dark-spectrum-cinnamon-00: #956e04;
+  --dark-spectrum-cinnamon-01: rgba(149, 110, 4, 0.62);
+  --dark-spectrum-cinnamon-02: rgba(149, 110, 4, 0.38);
+  --dark-spectrum-cinnamon-03: rgba(149, 110, 4, 0.24);
+  --dark-spectrum-cinnamon-04: rgba(149, 110, 4, 0.15);
+  --dark-spectrum-cinnamon-05: rgba(149, 110, 4, 0.09);
+  --dark-spectrum-cinnamon-06: rgba(149, 110, 4, 0.05);
+  --dark-spectrum-cinnamon-07: rgba(149, 110, 4, 0.04);
+  --dark-spectrum-cinnamon-08: rgba(149, 110, 4, 0.02);
+  --dark-spectrum-lichen-00: #4c8740;
+  --dark-spectrum-lichen-01: rgba(76, 135, 64, 0.62);
+  --dark-spectrum-lichen-02: rgba(76, 135, 64, 0.38);
+  --dark-spectrum-lichen-03: rgba(76, 135, 64, 0.24);
+  --dark-spectrum-lichen-04: rgba(76, 135, 64, 0.15);
+  --dark-spectrum-lichen-05: rgba(76, 135, 64, 0.09);
+  --dark-spectrum-lichen-06: rgba(76, 135, 64, 0.05);
+  --dark-spectrum-lichen-07: rgba(76, 135, 64, 0.04);
+  --dark-spectrum-lichen-08: rgba(76, 135, 64, 0.02);
+  --dark-spectrum-aurora-00: #038175;
+  --dark-spectrum-aurora-01: rgba(3, 129, 117, 0.62);
+  --dark-spectrum-aurora-02: rgba(3, 129, 117, 0.38);
+  --dark-spectrum-aurora-03: rgba(3, 129, 117, 0.24);
+  --dark-spectrum-aurora-04: rgba(3, 129, 117, 0.15);
+  --dark-spectrum-aurora-05: rgba(3, 129, 117, 0.09);
+  --dark-spectrum-aurora-06: rgba(3, 129, 117, 0.05);
+  --dark-spectrum-aurora-07: rgba(3, 129, 117, 0.04);
+  --dark-spectrum-aurora-08: rgba(3, 129, 117, 0.02);
+  --dark-spectrum-wisteria-00: #5477e8;
+  --dark-spectrum-wisteria-01: rgba(84, 119, 232, 0.62);
+  --dark-spectrum-wisteria-02: rgba(84, 119, 232, 0.38);
+  --dark-spectrum-wisteria-03: rgba(84, 119, 232, 0.24);
+  --dark-spectrum-wisteria-04: rgba(84, 119, 232, 0.15);
+  --dark-spectrum-wisteria-05: rgba(84, 119, 232, 0.09);
+  --dark-spectrum-wisteria-06: rgba(84, 119, 232, 0.05);
+  --dark-spectrum-wisteria-07: rgba(84, 119, 232, 0.04);
+  --dark-spectrum-wisteria-08: rgba(84, 119, 232, 0.02);
+  --dark-spectrum-all: linear-gradient(90deg, #d548a6 0%, #e25046 17%, #4c8740 33%, #038175 50%, #0586c2, #5477e8 100%);
+  --draggable-origin: 0.38;
+  --font-family-dm-sans: 'DM Sans';
+  --font-family-dm-mono: 'DM Mono';
+  --font-weight-dm-sans-black: 900;
+  --font-weight-dm-sans-bold: 700;
+  --font-weight-dm-sans-extrabold: 800;
+  --font-weight-dm-sans-extralight: 200;
+  --font-weight-dm-sans-light: 300;
+  --font-weight-dm-sans-medium: 500;
+  --font-weight-dm-sans-regular: 400;
+  --font-weight-dm-sans-semibold: 600;
+  --font-weight-dm-sans-thin: 100;
+  --font-weight-dm-mono-light: 300;
+  --font-weight-dm-mono-medium: 500;
+  --font-weight-dm-mono-regular: 400;
+  --grayscale-black-00: #000000;
+  --grayscale-black-01: rgba(0, 0, 0, 0.62);
+  --grayscale-black-02: rgba(0, 0, 0, 0.38);
+  --grayscale-black-03: rgba(0, 0, 0, 0.24);
+  --grayscale-black-04: rgba(0, 0, 0, 0.15);
+  --grayscale-black-05: rgba(0, 0, 0, 0.09);
+  --grayscale-black-06: rgba(0, 0, 0, 0.05);
+  --grayscale-black-07: rgba(0, 0, 0, 0.04);
+  --grayscale-black-08: rgba(0, 0, 0, 0.02);
+  --grayscale-black-opaque-00: #000000;
+  --grayscale-black-opaque-01: #616161;
+  --grayscale-black-opaque-02: #9e9e9e;
+  --grayscale-black-opaque-03: #c2c2c2;
+  --grayscale-black-opaque-04: #d9d9d9;
+  --grayscale-black-opaque-05: #e8e8e8;
+  --grayscale-black-opaque-06: #f2f2f2;
+  --grayscale-black-opaque-07: #f5f5f5;
+  --grayscale-black-opaque-08: #fafafa;
+  --grayscale-white-00: #ffffff;
+  --grayscale-white-01: rgba(255, 255, 255, 0.62);
+  --grayscale-white-02: rgba(255, 255, 255, 0.38);
+  --grayscale-white-03: rgba(255, 255, 255, 0.24);
+  --grayscale-white-04: rgba(255, 255, 255, 0.15);
+  --grayscale-white-05: rgba(255, 255, 255, 0.09);
+  --grayscale-white-06: rgba(255, 255, 255, 0.05);
+  --grayscale-white-07: rgba(255, 255, 255, 0.04);
+  --grayscale-white-08: rgba(255, 255, 255, 0.02);
+  --grayscale-white-opaque-00: #ffffff;
+  --grayscale-white-opaque-01: #9e9e9e;
+  --grayscale-white-opaque-02: #616161;
+  --grayscale-white-opaque-03: #3d3d3d;
+  --grayscale-white-opaque-04: #262626;
+  --grayscale-white-opaque-05: #171717;
+  --grayscale-white-opaque-06: #0d0d0d;
+  --grayscale-white-opaque-07: #0a0a0a;
+  --grayscale-white-opaque-08: #050505;
+  --icon-bold-border-width: 3px;
+  --icon-light-border-width: 1px;
+  --icon-medium-border-width: 2px;
+  --icon-regular-border-width: 1.5px;
+  --icon-thin-border-width: 0.5px;
+  --light-brand-primary-00: #000000;
+  --light-brand-primary-01: rgba(0, 0, 0, 0.62);
+  --light-brand-primary-02: rgba(0, 0, 0, 0.38);
+  --light-brand-primary-03: rgba(0, 0, 0, 0.24);
+  --light-brand-primary-04: rgba(0, 0, 0, 0.15);
+  --light-brand-primary-05: rgba(0, 0, 0, 0.09);
+  --light-brand-primary-06: rgba(0, 0, 0, 0.05);
+  --light-brand-primary-07: rgba(0, 0, 0, 0.04);
+  --light-brand-primary-08: rgba(0, 0, 0, 0.02);
+  --light-brand-secondary-00: #269c85;
+  --light-brand-secondary-01: rgba(38, 156, 133, 0.62);
+  --light-brand-secondary-02: rgba(38, 156, 133, 0.38);
+  --light-brand-secondary-03: rgba(38, 156, 133, 0.24);
+  --light-brand-secondary-04: rgba(38, 156, 133, 0.15);
+  --light-brand-secondary-05: rgba(38, 156, 133, 0.09);
+  --light-brand-secondary-06: rgba(38, 156, 133, 0.05);
+  --light-brand-secondary-07: rgba(38, 156, 133, 0.04);
+  --light-brand-secondary-08: rgba(38, 156, 133, 0.02);
+  --light-spectrum-saffron-00: #ea6357;
+  --light-spectrum-saffron-01: rgba(234, 99, 87, 0.62);
+  --light-spectrum-saffron-02: rgba(234, 99, 87, 0.38);
+  --light-spectrum-saffron-03: rgba(234, 99, 87, 0.24);
+  --light-spectrum-saffron-04: rgba(234, 99, 87, 0.15);
+  --light-spectrum-saffron-05: rgba(234, 99, 87, 0.09);
+  --light-spectrum-saffron-06: rgba(234, 99, 87, 0.05);
+  --light-spectrum-saffron-07: rgba(234, 99, 87, 0.04);
+  --light-spectrum-saffron-08: rgba(234, 99, 87, 0.02);
+  --light-spectrum-ocean-00: #0094de;
+  --light-spectrum-ocean-01: rgba(0, 148, 222, 0.62);
+  --light-spectrum-ocean-02: rgba(0, 148, 222, 0.38);
+  --light-spectrum-ocean-03: rgba(0, 148, 222, 0.24);
+  --light-spectrum-ocean-04: rgba(0, 148, 222, 0.15);
+  --light-spectrum-ocean-05: rgba(0, 148, 222, 0.09);
+  --light-spectrum-ocean-06: rgba(0, 148, 222, 0.05);
+  --light-spectrum-ocean-07: rgba(0, 148, 222, 0.04);
+  --light-spectrum-ocean-08: rgba(0, 148, 222, 0.02);
+  --light-spectrum-peony-00: #df5ab0;
+  --light-spectrum-peony-01: rgba(223, 90, 176, 0.62);
+  --light-spectrum-peony-02: rgba(223, 90, 176, 0.38);
+  --light-spectrum-peony-03: rgba(223, 90, 176, 0.24);
+  --light-spectrum-peony-04: rgba(223, 90, 176, 0.15);
+  --light-spectrum-peony-05: rgba(223, 90, 176, 0.09);
+  --light-spectrum-peony-06: rgba(223, 90, 176, 0.05);
+  --light-spectrum-peony-07: rgba(223, 90, 176, 0.04);
+  --light-spectrum-peony-08: rgba(223, 90, 176, 0.02);
+  --light-spectrum-cinnamon-00: #b28700;
+  --light-spectrum-cinnamon-01: rgba(178, 135, 0, 0.62);
+  --light-spectrum-cinnamon-02: rgba(178, 135, 0, 0.38);
+  --light-spectrum-cinnamon-03: rgba(178, 135, 0, 0.24);
+  --light-spectrum-cinnamon-04: rgba(178, 135, 0, 0.15);
+  --light-spectrum-cinnamon-05: rgba(178, 135, 0, 0.09);
+  --light-spectrum-cinnamon-06: rgba(178, 135, 0, 0.05);
+  --light-spectrum-cinnamon-07: rgba(178, 135, 0, 0.04);
+  --light-spectrum-cinnamon-08: rgba(178, 135, 0, 0.02);
+  --light-spectrum-lichen-00: #509e42;
+  --light-spectrum-lichen-01: rgba(80, 158, 66, 0.62);
+  --light-spectrum-lichen-02: rgba(80, 158, 66, 0.38);
+  --light-spectrum-lichen-03: rgba(80, 158, 66, 0.24);
+  --light-spectrum-lichen-04: rgba(80, 158, 66, 0.15);
+  --light-spectrum-lichen-05: rgba(80, 158, 66, 0.09);
+  --light-spectrum-lichen-06: rgba(80, 158, 66, 0.05);
+  --light-spectrum-lichen-07: rgba(80, 158, 66, 0.04);
+  --light-spectrum-lichen-08: rgba(80, 158, 66, 0.02);
+  --light-spectrum-aurora-00: #009e90;
+  --light-spectrum-aurora-01: rgba(0, 158, 144, 0.62);
+  --light-spectrum-aurora-02: rgba(0, 158, 144, 0.38);
+  --light-spectrum-aurora-03: rgba(0, 158, 144, 0.24);
+  --light-spectrum-aurora-04: rgba(0, 158, 144, 0.15);
+  --light-spectrum-aurora-05: rgba(0, 158, 144, 0.09);
+  --light-spectrum-aurora-06: rgba(0, 158, 144, 0.05);
+  --light-spectrum-aurora-07: rgba(0, 158, 144, 0.04);
+  --light-spectrum-aurora-08: rgba(0, 158, 144, 0.02);
+  --light-spectrum-wisteria-00: #6987ef;
+  --light-spectrum-wisteria-01: rgba(105, 135, 239, 0.62);
+  --light-spectrum-wisteria-02: rgba(105, 135, 239, 0.38);
+  --light-spectrum-wisteria-03: rgba(105, 135, 239, 0.24);
+  --light-spectrum-wisteria-04: rgba(105, 135, 239, 0.15);
+  --light-spectrum-wisteria-05: rgba(105, 135, 239, 0.09);
+  --light-spectrum-wisteria-06: rgba(105, 135, 239, 0.05);
+  --light-spectrum-wisteria-07: rgba(105, 135, 239, 0.04);
+  --light-spectrum-wisteria-08: rgba(105, 135, 239, 0.02);
+  --light-spectrum-all: linear-gradient(
+    90deg,
+    #df5ab0 0%,
+    #ea6357 17%,
+    #509e42 33%,
+    #009e90 50%,
+    #0094de,
+    #6987ef 100%
+  );
+  --named-intermediate: 20px;
+  --named-large: 32px;
+  --named-medium: 24px;
+  --named-micro: 8px;
+  --named-mini: 12px;
+  --named-moderate: 28px;
+  --named-nano: 4px;
+  --named-pico: 2px;
+  --named-small: 16px;
+  --shadow-level-00:
+    0 31.333px 23px 0 rgba(0, 0, 0, 0.09), 0 9.446px 6.934px 0 rgba(0, 0, 0, 0.05),
+    0 3.923px 2.88px 0 rgba(0, 0, 0, 0.04), 0 1.419px 1.042px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-level-01:
+    0 62.667px 46px 0 rgba(0, 0, 0, 0.09), 0 18.891px 13.867px 0 rgba(0, 0, 0, 0.05),
+    0 7.847px 5.76px 0 rgba(0, 0, 0, 0.04), 0 2.838px 2.083px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-level-02:
+    0 94px 69px 0 rgba(0, 0, 0, 0.09), 0 28.338px 20.801px 0 rgba(0, 0, 0, 0.05),
+    0 11.77px 8.64px 0 rgba(0, 0, 0, 0.04), 0 4.257px 3.125px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sheet-00:
+    0 -31.333px 23px 0 rgba(0, 0, 0, 0.09), 0 -9.446px 6.934px 0 rgba(0, 0, 0, 0.05),
+    0 -3.923px 2.88px 0 rgba(0, 0, 0, 0.04), 0 -1.419px 1.042px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sheet-01:
+    0 -62.667px 46px 0 rgba(0, 0, 0, 0.09), 0 -18.891px 13.867px 0 rgba(0, 0, 0, 0.05),
+    0 -7.847px 5.76px 0 rgba(0, 0, 0, 0.04), 0 -2.838px 2.083px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sheet-02:
+    0 -94px 69px 0 rgba(0, 0, 0, 0.09), 0 -28.338px 20.801px 0 rgba(0, 0, 0, 0.05),
+    0 -11.77px 8.64px 0 rgba(0, 0, 0, 0.04), 0 -4.257px 3.125px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --sizing-named-abundant: 40px;
+  --sizing-named-colossal: 112px;
+  --sizing-named-cosmic: 192px;
+  --sizing-named-galactic: 160px;
+  --sizing-named-generous: 36px;
+  --sizing-named-giant: 80px;
+  --sizing-named-grand: 72px;
+  --sizing-named-great: 56px;
+  --sizing-named-half: 50%;
+  --sizing-named-bigforpill: 9999px;
+  --sizing-named-intermediate: 20px;
+  --sizing-named-huge: 48px;
+  --sizing-named-jumbo: 64px;
+  --sizing-named-large: 32px;
+  --sizing-named-massive: 96px;
+  --sizing-named-medium: 24px;
+  --sizing-named-micro: 8px;
+  --sizing-named-mini: 12px;
+  --sizing-named-moderate: 28px;
+  --sizing-named-nano: 4px;
+  --sizing-named-pico: 2px;
+  --sizing-named-planetary: 128px;
+  --sizing-named-small: 16px;
+  --sizing-named-stellar: 144px;
+  --sizing-unit: 8px;
+  --surface-action-primary-emphasis-00: rgba(255, 255, 255, 0.15);
+  --surface-action-primary-emphasis-01: rgba(255, 255, 255, 0.09);
+  --surface-action-primary-emphasis-03: rgba(255, 255, 255, 0.05);
+  --surface-action-primary-emphasis-04: rgba(255, 255, 255, 0.04);
+  --surface-action-secondary-emphasis-00: rgba(173, 235, 223, 0.15);
+  --surface-action-secondary-emphasis-01: rgba(173, 235, 223, 0.09);
+  --surface-action-secondary-emphasis-03: rgba(173, 235, 223, 0.05);
+  --surface-action-secondary-emphasis-04: rgba(173, 235, 223, 0.04);
+  --surface-level-00-emphasis-00: rgba(255, 255, 255, 0.05);
+  --surface-level-00-emphasis-opaque-00: #0d0d0d;
+  --surface-level-01-emphasis-00: rgba(255, 255, 255, 0.15);
+  --surface-level-01-emphasis-01: rgba(255, 255, 255, 0.09);
+  --surface-level-01-emphasis-02: rgba(255, 255, 255, 0.05);
+  --surface-level-01-emphasis-03: rgba(255, 255, 255, 0.04);
+  --surface-level-01-emphasis-opaque-00: #262626;
+  --surface-level-01-emphasis-opaque-01: #171717;
+  --surface-level-01-emphasis-opaque-02: #0d0d0d;
+  --surface-level-01-emphasis-opaque-03: #0a0a0a;
+  --surface-level-02-emphasis-00: rgba(255, 255, 255, 0.15);
+  --surface-level-02-emphasis-01: rgba(255, 255, 255, 0.09);
+  --surface-level-02-emphasis-02: rgba(255, 255, 255, 0.05);
+  --surface-level-02-emphasis-03: rgba(255, 255, 255, 0.04);
+  --surface-level-02-emphasis-opaque-00: #262626;
+  --surface-level-02-emphasis-opaque-01: #171717;
+  --surface-level-02-emphasis-opaque-02: #0d0d0d;
+  --surface-level-02-emphasis-opaque-03: #0a0a0a;
+  --surface-signal-action-emphasis-00: rgba(255, 255, 255, 0.15);
+  --surface-signal-action-emphasis-01: rgba(255, 255, 255, 0.09);
+  --surface-signal-action-emphasis-03: rgba(255, 255, 255, 0.05);
+  --surface-signal-action-emphasis-04: rgba(255, 255, 255, 0.04);
+  --surface-signal-caution-emphasis-00: rgba(149, 110, 4, 0.15);
+  --surface-signal-caution-emphasis-01: rgba(149, 110, 4, 0.09);
+  --surface-signal-caution-emphasis-03: rgba(149, 110, 4, 0.05);
+  --surface-signal-caution-emphasis-04: rgba(149, 110, 4, 0.04);
+  --surface-signal-go-emphasis-00: rgba(76, 135, 64, 0.15);
+  --surface-signal-go-emphasis-01: rgba(76, 135, 64, 0.09);
+  --surface-signal-go-emphasis-03: rgba(76, 135, 64, 0.05);
+  --surface-signal-go-emphasis-04: rgba(76, 135, 64, 0.04);
+  --surface-signal-guide-emphasis-00: rgba(5, 134, 194, 0.15);
+  --surface-signal-guide-emphasis-01: rgba(5, 134, 194, 0.09);
+  --surface-signal-guide-emphasis-03: rgba(5, 134, 194, 0.05);
+  --surface-signal-guide-emphasis-04: rgba(5, 134, 194, 0.04);
+  --surface-signal-stop-emphasis-00: rgba(213, 72, 166, 0.15);
+  --surface-signal-stop-emphasis-01: rgba(213, 72, 166, 0.09);
+  --surface-signal-stop-emphasis-03: rgba(213, 72, 166, 0.05);
+  --surface-signal-stop-emphasis-04: rgba(213, 72, 166, 0.04);
+  --surface-spectrum-saffron-emphasis-00: rgba(226, 80, 70, 0.15);
+  --surface-spectrum-saffron-emphasis-01: rgba(234, 99, 87, 0.09);
+  --surface-spectrum-saffron-emphasis-03: rgba(234, 99, 87, 0.05);
+  --surface-spectrum-saffron-emphasis-04: rgba(234, 99, 87, 0.04);
+  --surface-spectrum-ocean-emphasis-00: rgba(5, 134, 194, 0.15);
+  --surface-spectrum-ocean-emphasis-01: rgba(5, 134, 194, 0.09);
+  --surface-spectrum-ocean-emphasis-03: rgba(5, 134, 194, 0.05);
+  --surface-spectrum-ocean-emphasis-04: rgba(5, 134, 194, 0.04);
+  --surface-spectrum-peony-emphasis-00: rgba(213, 72, 166, 0.15);
+  --surface-spectrum-peony-emphasis-01: rgba(213, 72, 166, 0.09);
+  --surface-spectrum-peony-emphasis-03: rgba(213, 72, 166, 0.05);
+  --surface-spectrum-peony-emphasis-04: rgba(213, 72, 166, 0.04);
+  --surface-spectrum-cinnamon-emphasis-00: rgba(149, 110, 4, 0.15);
+  --surface-spectrum-cinnamon-emphasis-01: rgba(149, 110, 4, 0.09);
+  --surface-spectrum-cinnamon-emphasis-03: rgba(149, 110, 4, 0.05);
+  --surface-spectrum-cinnamon-emphasis-04: rgba(149, 110, 4, 0.04);
+  --surface-spectrum-lichen-emphasis-00: rgba(76, 135, 64, 0.15);
+  --surface-spectrum-lichen-emphasis-01: rgba(76, 135, 64, 0.09);
+  --surface-spectrum-lichen-emphasis-03: rgba(76, 135, 64, 0.05);
+  --surface-spectrum-lichen-emphasis-04: rgba(76, 135, 64, 0.04);
+  --surface-spectrum-aurora-emphasis-00: rgba(3, 129, 117, 0.15);
+  --surface-spectrum-aurora-emphasis-01: rgba(3, 129, 117, 0.09);
+  --surface-spectrum-aurora-emphasis-03: rgba(3, 129, 117, 0.05);
+  --surface-spectrum-aurora-emphasis-04: rgba(3, 129, 117, 0.04);
+  --surface-spectrum-wisteria-emphasis-00: rgba(84, 119, 232, 0.15);
+  --surface-spectrum-wisteria-emphasis-01: rgba(84, 119, 232, 0.09);
+  --surface-spectrum-wisteria-emphasis-03: rgba(84, 119, 232, 0.05);
+  --surface-spectrum-wisteria-emphasis-04: rgba(84, 119, 232, 0.04);
+  --test: -4px;
+  --typography-numbers-body1-base: 400 16px/1.25 'DM Mono';
+  --typography-numbers-body1-strong: 500 16px/1.25 'DM Mono';
+  --typography-numbers-body2-base: 400 14px/1.1428571428571428 'DM Mono';
+  --typography-numbers-body2-strong: 500 14px/1.1428571428571428 'DM Mono';
+  --typography-numbers-caption1-base: 400 12px/1.1666666666666667 'DM Mono';
+  --typography-numbers-caption1-strong: 500 12px/1.1666666666666667 'DM Mono';
+  --typography-numbers-caption2-base: 400 11px/1.0909090909090908 'DM Mono';
+  --typography-numbers-caption2-strong: 500 11px/1.0909090909090908 'DM Mono';
+  --typography-numbers-caption3-strong: 500 10px/1.2 'DM Mono';
+  --typography-numbers-display1-base: 500 48px/1 'DM Mono';
+  --typography-numbers-display2-base: 500 40px/1 'DM Mono';
+  --typography-numbers-display3-base: 500 36px/1 'DM Mono';
+  --typography-numbers-stub-strong: 500 10px/1.2 'DM Mono';
+  --typography-text-body0-open: 400 18px/1.3333333333333333 'DM Sans';
+  --typography-text-body1-base: 400 16px/1.25 'DM Sans';
+  --typography-text-body1-open: 400 16px/1.5 'DM Sans';
+  --typography-text-body1-strong: 600 16px/1.25 'DM Sans';
+  --typography-text-body2-base: 400 14px/1.1428571428571428 'DM Sans';
+  --typography-text-body2-open: 400 14px/1.5 'DM Sans';
+  --typography-text-body2-strong: 600 14px/1.1428571428571428 'DM Sans';
+  --typography-text-caption1-base: 400 12px/1.1666666666666667 'DM Sans';
+  --typography-text-caption1-strong: 600 12px/1.1666666666666667 'DM Sans';
+  --typography-text-caption2-base: 400 11px/1.0909090909090908 'DM Sans';
+  --typography-text-caption2-strong: 600 11px/1.0909090909090908 'DM Sans';
+  --typography-text-caption3-strong: 600 10px/1.2 'DM Sans';
+  --typography-text-display1-base: 500 48px/1.1666666666666667 'DM Sans';
+  --typography-text-display2-base: 500 40px/1.2 'DM Sans';
+  --typography-text-display3-base: 500 36px/1.1111111111111112 'DM Sans';
+  --typography-text-heading1-base: 500 32px/1.125 'DM Sans';
+  --typography-text-heading1-strong: 600 32px/1.125 'DM Sans';
+  --typography-text-heading2-base: 500 28px/1.1428571428571428 'DM Sans';
+  --typography-text-heading2-strong: 600 28px/1.1428571428571428 'DM Sans';
+  --typography-text-heading3-base: 500 24px/1.1666666666666667 'DM Sans';
+  --typography-text-heading3-strong: 600 24px/1.1666666666666667 'DM Sans';
+  --typography-text-heading4-strong: 600 20px/1.2 'DM Sans';
+  --typography-text-stub-strong: 600 10px/1.2 'DM Sans';
+  --animation-switch-knob-duration: 0.23s;
+  --animation-switch-knob-easing: cubic-bezier(0.33, 1, 0.68, 1);
+  --animation-switch-track-duration: 0.38s;
+  --animation-switch-track-easing: cubic-bezier(0.33, 1, 0.68, 1);
+  --control-generous-border-radius: 8px;
+  --control-generous-padding-both: 8px;
+  --control-generous-padding-horizontal: 12px;
+  --control-generous-padding-vertical: 8px;
+  --control-great-border-radius: 12px;
+  --control-great-padding-both: 16px;
+  --control-great-padding-horizontal: 18px;
+  --control-great-padding-vertical: 16px;
+  --control-jumbo-border-radius: 12px;
+  --control-grand-border-radius: 16px;
+  --control-giant-border-radius: 16px;
+  --control-massive-border-radius: 20px;
+  --control-huge-border-radius: 10px;
+  --control-huge-padding-both: 14px;
+  --control-huge-padding-horizontal: 16px;
+  --control-huge-padding-vertical: 14px;
+  --control-intermediate-padding-both: 4px;
+  --control-intermediate-padding-horizontal: 6px;
+  --control-intermediate-padding-vertical: 4px;
+  --control-medium-border-radius: 4px;
+  --control-medium-padding-both: 5px;
+  --control-medium-padding-horizontal: 8px;
+  --control-medium-padding-vertical: 5px;
+  --control-moderate-border-radius: 6px;
+  --control-moderate-padding-both: 6px;
+  --control-moderate-padding-horizontal: 9px;
+  --control-moderate-padding-vertical: 6px;
+  --control-pill-border-radius: 9999px;
+  --control-small-padding-both: 2px;
+  --control-small-padding-horizontal: 4px;
+  --control-small-padding-vertical: 2px;
+  --control-border-width: 1px;
+  --control-large-border-radius: 6px;
+  --controls-generous-min-height: 36px;
+  --controls-generous-min-width: 36px;
+  --controls-great-min-height: 56px;
+  --controls-great-min-width: 56px;
+  --controls-huge-min-height: 48px;
+  --controls-huge-min-width: 48px;
+  --controls-level-00-shadow:
+    0 31.333px 23px 0 rgba(0, 0, 0, 0.09), 0 9.446px 6.934px 0 rgba(0, 0, 0, 0.05),
+    0 3.923px 2.88px 0 rgba(0, 0, 0, 0.04), 0 1.419px 1.042px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --controls-level-01-shadow:
+    0 62.667px 46px 0 rgba(0, 0, 0, 0.09), 0 18.891px 13.867px 0 rgba(0, 0, 0, 0.05),
+    0 7.847px 5.76px 0 rgba(0, 0, 0, 0.04), 0 2.838px 2.083px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --controls-level-02-shadow:
+    0 94px 69px 0 rgba(0, 0, 0, 0.09), 0 28.338px 20.801px 0 rgba(0, 0, 0, 0.05),
+    0 11.77px 8.64px 0 rgba(0, 0, 0, 0.04), 0 4.257px 3.125px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --controls-medium-min-height: 24px;
+  --controls-medium-min-width: 24px;
+  --controls-moderate-min-height: 28px;
+  --controls-moderate-min-width: 28px;
+  --controls-intermediate-min-height: 20px;
+  --controls-intermediate-min-width: 20px;
+  --controls-small-min-height: 16px;
+  --controls-small-min-width: 16px;
+  --message-generous-border-radius: 18px;
+  --message-generous-padding-horizontal: 12px;
+  --message-generous-padding-vertical: 8px;
+  --message-great-border-radius: 28px;
+  --message-great-padding-horizontal: 20px;
+  --message-great-padding-vertical: 14px;
+  --message-huge-border-radius: 24px;
+  --message-huge-padding-horizontal: 16px;
+  --message-huge-padding-vertical: 12px;
+  --message-max-width: 720px;
+  --message-large-padding-horizontal: 8px;
+  --message-large-padding-vertical: 6px;
+  --primitives-divider-thickness: 1px;
+  --modal-small-max-width: 480px;
+  --modal-medium-max-width: 600px;
+  --modal-large-max-width: 992px;
+  --pulser-mini-width: 24px;
+  --pulser-mini-height: 12px;
+  --pulser-micro-width: 16px;
+  --pulser-micro-height: 8px;
+  --pulser-small-width: 32px;
+  --pulser-small-height: 16px;
+  --pulser-intermediate-width: 32px;
+  --pulser-intermediate-height: 20px;
+  --element-action-primary-emphasis-00: #ffffff;
+  --element-action-primary-emphasis-01: rgba(255, 255, 255, 0.62);
+  --element-action-primary-emphasis-03: rgba(255, 255, 255, 0.38);
+  --element-action-primary-emphasis-04: rgba(255, 255, 255, 0.24);
+  --element-action-secondary-emphasis-00: #adebdf;
+  --element-action-secondary-emphasis-01: rgba(173, 235, 223, 0.62);
+  --element-action-secondary-emphasis-03: rgba(173, 235, 223, 0.38);
+  --element-action-secondary-emphasis-04: rgba(173, 235, 223, 0.24);
+  --element-emphasis-00: #ffffff;
+  --element-emphasis-01: rgba(255, 255, 255, 0.62);
+  --element-emphasis-02: rgba(255, 255, 255, 0.38);
+  --element-emphasis-03: rgba(255, 255, 255, 0.24);
+  --element-reverse-emphasis-00: #000000;
+  --element-reverse-emphasis-01: rgba(0, 0, 0, 0.62);
+  --element-reverse-emphasis-02: rgba(0, 0, 0, 0.38);
+  --element-reverse-emphasis-03: rgba(0, 0, 0, 0.24);
+  --element-signal-caution-emphasis-00: #956e04;
+  --element-signal-caution-emphasis-01: rgba(149, 110, 4, 0.62);
+  --element-signal-caution-emphasis-03: rgba(149, 110, 4, 0.38);
+  --element-signal-caution-emphasis-04: rgba(149, 110, 4, 0.24);
+  --element-signal-go-emphasis-00: #4c8740;
+  --element-signal-go-emphasis-01: rgba(76, 135, 64, 0.62);
+  --element-signal-go-emphasis-03: rgba(76, 135, 64, 0.38);
+  --element-signal-go-emphasis-04: rgba(76, 135, 64, 0.24);
+  --element-signal-guide-emphasis-00: #0586c2;
+  --element-signal-guide-emphasis-01: rgba(5, 134, 194, 0.62);
+  --element-signal-guide-emphasis-03: rgba(5, 134, 194, 0.38);
+  --element-signal-guide-emphasis-04: rgba(5, 134, 194, 0.24);
+  --element-signal-stop-emphasis-00: #e25046;
+  --element-signal-stop-emphasis-01: rgba(226, 80, 70, 0.62);
+  --element-signal-stop-emphasis-03: rgba(226, 80, 70, 0.38);
+  --element-signal-stop-emphasis-04: rgba(226, 80, 70, 0.24);
+  --element-spectrum-saffron-emphasis-00: #e25046;
+  --element-spectrum-saffron-emphasis-01: rgba(226, 80, 70, 0.62);
+  --element-spectrum-saffron-emphasis-03: rgba(226, 80, 70, 0.38);
+  --element-spectrum-saffron-emphasis-04: rgba(226, 80, 70, 0.24);
+  --element-spectrum-ocean-emphasis-00: #0586c2;
+  --element-spectrum-ocean-emphasis-01: rgba(5, 134, 194, 0.62);
+  --element-spectrum-ocean-emphasis-03: rgba(5, 134, 194, 0.38);
+  --element-spectrum-ocean-emphasis-04: rgba(5, 134, 194, 0.24);
+  --element-spectrum-peony-emphasis-00: #d548a6;
+  --element-spectrum-peony-emphasis-01: rgba(213, 72, 166, 0.62);
+  --element-spectrum-peony-emphasis-03: rgba(213, 72, 166, 0.38);
+  --element-spectrum-peony-emphasis-04: rgba(213, 72, 166, 0.24);
+  --element-spectrum-cinnamon-emphasis-00: #956e04;
+  --element-spectrum-cinnamon-emphasis-01: rgba(149, 110, 4, 0.62);
+  --element-spectrum-cinnamon-emphasis-03: rgba(149, 110, 4, 0.38);
+  --element-spectrum-cinnamon-emphasis-04: rgba(149, 110, 4, 0.24);
+  --element-spectrum-lichen-emphasis-00: #4c8740;
+  --element-spectrum-lichen-emphasis-01: rgba(76, 135, 64, 0.62);
+  --element-spectrum-lichen-emphasis-03: rgba(76, 135, 64, 0.38);
+  --element-spectrum-lichen-emphasis-04: rgba(76, 135, 64, 0.24);
+  --element-spectrum-aurora-emphasis-00: #038175;
+  --element-spectrum-aurora-emphasis-01: rgba(3, 129, 117, 0.62);
+  --element-spectrum-aurora-emphasis-03: rgba(3, 129, 117, 0.38);
+  --element-spectrum-aurora-emphasis-04: rgba(3, 129, 117, 0.24);
+  --element-spectrum-wisteria-emphasis-00: #5477e8;
+  --element-spectrum-wisteria-emphasis-01: rgba(84, 119, 232, 0.62);
+  --element-spectrum-wisteria-emphasis-03: rgba(84, 119, 232, 0.38);
+  --element-spectrum-wisteria-emphasis-04: rgba(84, 119, 232, 0.24);
+  --element-spectrum-all: linear-gradient(
+    90deg,
+    #df5ab0 0%,
+    #ea6357 17%,
+    #509e42 33%,
+    #009e90 50%,
+    #0094de,
+    #6987ef 100%
+  );
+  --window-tab-max-width: 112px;
+  --thumbnail-extra-small-width: 112px;
+  --thumbnail-extra-small-height: 112px;
+  --thumbnail-extra-small-border-radius: 8px;
+  --thumbnail-small-width: 192px;
+  --thumbnail-small-height: 192px;
+  --thumbnail-small-border-radius: 12px;
+  --thumbnail-medium-width: 280px;
+  --thumbnail-medium-height: 280px;
+  --thumbnail-medium-border-radius: 16px;
+  --thumbnail-large-width: 320px;
+  --thumbnail-large-height: 320px;
+  --thumbnail-large-border-radius: 20px;
+  --thumbnail-extra-large-width: 360px;
+  --thumbnail-extra-large-height: 360px;
+  --thumbnail-extra-large-border-radius: 24px;
+  --always-black-emphasis-00: #000000;
+  --always-black-emphasis-01: rgba(0, 0, 0, 0.62);
+  --always-black-emphasis-02: rgba(0, 0, 0, 0.38);
+  --always-black-emphasis-03: rgba(0, 0, 0, 0.24);
+  --always-white-emphasis-00: #ffffff;
+  --always-white-emphasis-01: rgba(255, 255, 255, 0.62);
+  --always-white-emphasis-02: rgba(255, 255, 255, 0.38);
+  --always-white-emphasis-03: rgba(255, 255, 255, 0.24);
+  --navigation-drawer-surface: rgba(255, 255, 255, 0.09);
+  --navigation-rail-surface: rgba(255, 255, 255, 0.09);
+}
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+.theme-light {
+  --dark-brand-primary-00: #ffffff;
+  --dark-brand-primary-01: rgba(255, 255, 255, 0.62);
+  --dark-brand-primary-02: rgba(255, 255, 255, 0.38);
+  --dark-brand-primary-03: rgba(255, 255, 255, 0.24);
+  --dark-brand-primary-04: rgba(255, 255, 255, 0.15);
+  --dark-brand-primary-05: rgba(255, 255, 255, 0.09);
+  --dark-brand-primary-06: rgba(255, 255, 255, 0.05);
+  --dark-brand-primary-07: rgba(255, 255, 255, 0.04);
+  --dark-brand-primary-08: rgba(255, 255, 255, 0.02);
+  --dark-brand-secondary-00: #adebdf;
+  --dark-brand-secondary-01: rgba(173, 235, 223, 0.62);
+  --dark-brand-secondary-02: rgba(173, 235, 223, 0.38);
+  --dark-brand-secondary-03: rgba(173, 235, 223, 0.24);
+  --dark-brand-secondary-04: rgba(173, 235, 223, 0.15);
+  --dark-brand-secondary-05: rgba(173, 235, 223, 0.09);
+  --dark-brand-secondary-06: rgba(173, 235, 223, 0.05);
+  --dark-brand-secondary-07: rgba(173, 235, 223, 0.04);
+  --dark-brand-secondary-08: rgba(173, 235, 223, 0.02);
+  --dark-spectrum-saffron-00: #e25046;
+  --dark-spectrum-saffron-01: rgba(226, 80, 70, 0.62);
+  --dark-spectrum-saffron-02: rgba(226, 80, 70, 0.38);
+  --dark-spectrum-saffron-03: rgba(226, 80, 70, 0.24);
+  --dark-spectrum-saffron-04: rgba(226, 80, 70, 0.15);
+  --dark-spectrum-saffron-05: rgba(234, 99, 87, 0.09);
+  --dark-spectrum-saffron-06: rgba(234, 99, 87, 0.05);
+  --dark-spectrum-saffron-07: rgba(234, 99, 87, 0.04);
+  --dark-spectrum-saffron-08: rgba(234, 99, 87, 0.02);
+  --dark-spectrum-ocean-00: #0586c2;
+  --dark-spectrum-ocean-01: rgba(5, 134, 194, 0.62);
+  --dark-spectrum-ocean-02: rgba(5, 134, 194, 0.38);
+  --dark-spectrum-ocean-03: rgba(5, 134, 194, 0.24);
+  --dark-spectrum-ocean-04: rgba(5, 134, 194, 0.15);
+  --dark-spectrum-ocean-05: rgba(5, 134, 194, 0.09);
+  --dark-spectrum-ocean-06: rgba(5, 134, 194, 0.05);
+  --dark-spectrum-ocean-07: rgba(5, 134, 194, 0.04);
+  --dark-spectrum-ocean-08: rgba(5, 134, 194, 0.02);
+  --dark-spectrum-peony-00: #d548a6;
+  --dark-spectrum-peony-01: rgba(213, 72, 166, 0.62);
+  --dark-spectrum-peony-02: rgba(213, 72, 166, 0.38);
+  --dark-spectrum-peony-03: rgba(213, 72, 166, 0.24);
+  --dark-spectrum-peony-04: rgba(213, 72, 166, 0.15);
+  --dark-spectrum-peony-05: rgba(213, 72, 166, 0.09);
+  --dark-spectrum-peony-06: rgba(213, 72, 166, 0.05);
+  --dark-spectrum-peony-07: rgba(213, 72, 166, 0.04);
+  --dark-spectrum-peony-08: rgba(213, 72, 166, 0.02);
+  --dark-spectrum-cinnamon-00: #956e04;
+  --dark-spectrum-cinnamon-01: rgba(149, 110, 4, 0.62);
+  --dark-spectrum-cinnamon-02: rgba(149, 110, 4, 0.38);
+  --dark-spectrum-cinnamon-03: rgba(149, 110, 4, 0.24);
+  --dark-spectrum-cinnamon-04: rgba(149, 110, 4, 0.15);
+  --dark-spectrum-cinnamon-05: rgba(149, 110, 4, 0.09);
+  --dark-spectrum-cinnamon-06: rgba(149, 110, 4, 0.05);
+  --dark-spectrum-cinnamon-07: rgba(149, 110, 4, 0.04);
+  --dark-spectrum-cinnamon-08: rgba(149, 110, 4, 0.02);
+  --dark-spectrum-lichen-00: #4c8740;
+  --dark-spectrum-lichen-01: rgba(76, 135, 64, 0.62);
+  --dark-spectrum-lichen-02: rgba(76, 135, 64, 0.38);
+  --dark-spectrum-lichen-03: rgba(76, 135, 64, 0.24);
+  --dark-spectrum-lichen-04: rgba(76, 135, 64, 0.15);
+  --dark-spectrum-lichen-05: rgba(76, 135, 64, 0.09);
+  --dark-spectrum-lichen-06: rgba(76, 135, 64, 0.05);
+  --dark-spectrum-lichen-07: rgba(76, 135, 64, 0.04);
+  --dark-spectrum-lichen-08: rgba(76, 135, 64, 0.02);
+  --dark-spectrum-aurora-00: #038175;
+  --dark-spectrum-aurora-01: rgba(3, 129, 117, 0.62);
+  --dark-spectrum-aurora-02: rgba(3, 129, 117, 0.38);
+  --dark-spectrum-aurora-03: rgba(3, 129, 117, 0.24);
+  --dark-spectrum-aurora-04: rgba(3, 129, 117, 0.15);
+  --dark-spectrum-aurora-05: rgba(3, 129, 117, 0.09);
+  --dark-spectrum-aurora-06: rgba(3, 129, 117, 0.05);
+  --dark-spectrum-aurora-07: rgba(3, 129, 117, 0.04);
+  --dark-spectrum-aurora-08: rgba(3, 129, 117, 0.02);
+  --dark-spectrum-wisteria-00: #5477e8;
+  --dark-spectrum-wisteria-01: rgba(84, 119, 232, 0.62);
+  --dark-spectrum-wisteria-02: rgba(84, 119, 232, 0.38);
+  --dark-spectrum-wisteria-03: rgba(84, 119, 232, 0.24);
+  --dark-spectrum-wisteria-04: rgba(84, 119, 232, 0.15);
+  --dark-spectrum-wisteria-05: rgba(84, 119, 232, 0.09);
+  --dark-spectrum-wisteria-06: rgba(84, 119, 232, 0.05);
+  --dark-spectrum-wisteria-07: rgba(84, 119, 232, 0.04);
+  --dark-spectrum-wisteria-08: rgba(84, 119, 232, 0.02);
+  --dark-spectrum-all: linear-gradient(90deg, #d548a6 0%, #e25046 17%, #4c8740 33%, #038175 50%, #0586c2, #5477e8 100%);
+  --draggable-origin: 0.38;
+  --font-family-dm-sans: 'DM Sans';
+  --font-family-dm-mono: 'DM Mono';
+  --font-weight-dm-sans-black: 900;
+  --font-weight-dm-sans-bold: 700;
+  --font-weight-dm-sans-extrabold: 800;
+  --font-weight-dm-sans-extralight: 200;
+  --font-weight-dm-sans-light: 300;
+  --font-weight-dm-sans-medium: 500;
+  --font-weight-dm-sans-regular: 400;
+  --font-weight-dm-sans-semibold: 600;
+  --font-weight-dm-sans-thin: 100;
+  --font-weight-dm-mono-light: 300;
+  --font-weight-dm-mono-medium: 500;
+  --font-weight-dm-mono-regular: 400;
+  --grayscale-black-00: #000000;
+  --grayscale-black-01: rgba(0, 0, 0, 0.62);
+  --grayscale-black-02: rgba(0, 0, 0, 0.38);
+  --grayscale-black-03: rgba(0, 0, 0, 0.24);
+  --grayscale-black-04: rgba(0, 0, 0, 0.15);
+  --grayscale-black-05: rgba(0, 0, 0, 0.09);
+  --grayscale-black-06: rgba(0, 0, 0, 0.05);
+  --grayscale-black-07: rgba(0, 0, 0, 0.04);
+  --grayscale-black-08: rgba(0, 0, 0, 0.02);
+  --grayscale-black-opaque-00: #000000;
+  --grayscale-black-opaque-01: #616161;
+  --grayscale-black-opaque-02: #9e9e9e;
+  --grayscale-black-opaque-03: #c2c2c2;
+  --grayscale-black-opaque-04: #d9d9d9;
+  --grayscale-black-opaque-05: #e8e8e8;
+  --grayscale-black-opaque-06: #f2f2f2;
+  --grayscale-black-opaque-07: #f5f5f5;
+  --grayscale-black-opaque-08: #fafafa;
+  --grayscale-white-00: #ffffff;
+  --grayscale-white-01: rgba(255, 255, 255, 0.62);
+  --grayscale-white-02: rgba(255, 255, 255, 0.38);
+  --grayscale-white-03: rgba(255, 255, 255, 0.24);
+  --grayscale-white-04: rgba(255, 255, 255, 0.15);
+  --grayscale-white-05: rgba(255, 255, 255, 0.09);
+  --grayscale-white-06: rgba(255, 255, 255, 0.05);
+  --grayscale-white-07: rgba(255, 255, 255, 0.04);
+  --grayscale-white-08: rgba(255, 255, 255, 0.02);
+  --grayscale-white-opaque-00: #ffffff;
+  --grayscale-white-opaque-01: #9e9e9e;
+  --grayscale-white-opaque-02: #616161;
+  --grayscale-white-opaque-03: #3d3d3d;
+  --grayscale-white-opaque-04: #262626;
+  --grayscale-white-opaque-05: #171717;
+  --grayscale-white-opaque-06: #0d0d0d;
+  --grayscale-white-opaque-07: #0a0a0a;
+  --grayscale-white-opaque-08: #050505;
+  --icon-bold-border-width: 3px;
+  --icon-light-border-width: 1px;
+  --icon-medium-border-width: 2px;
+  --icon-regular-border-width: 1.5px;
+  --icon-thin-border-width: 0.5px;
+  --light-brand-primary-00: #000000;
+  --light-brand-primary-01: rgba(0, 0, 0, 0.62);
+  --light-brand-primary-02: rgba(0, 0, 0, 0.38);
+  --light-brand-primary-03: rgba(0, 0, 0, 0.24);
+  --light-brand-primary-04: rgba(0, 0, 0, 0.15);
+  --light-brand-primary-05: rgba(0, 0, 0, 0.09);
+  --light-brand-primary-06: rgba(0, 0, 0, 0.05);
+  --light-brand-primary-07: rgba(0, 0, 0, 0.04);
+  --light-brand-primary-08: rgba(0, 0, 0, 0.02);
+  --light-brand-secondary-00: #269c85;
+  --light-brand-secondary-01: rgba(38, 156, 133, 0.62);
+  --light-brand-secondary-02: rgba(38, 156, 133, 0.38);
+  --light-brand-secondary-03: rgba(38, 156, 133, 0.24);
+  --light-brand-secondary-04: rgba(38, 156, 133, 0.15);
+  --light-brand-secondary-05: rgba(38, 156, 133, 0.09);
+  --light-brand-secondary-06: rgba(38, 156, 133, 0.05);
+  --light-brand-secondary-07: rgba(38, 156, 133, 0.04);
+  --light-brand-secondary-08: rgba(38, 156, 133, 0.02);
+  --light-spectrum-saffron-00: #ea6357;
+  --light-spectrum-saffron-01: rgba(234, 99, 87, 0.62);
+  --light-spectrum-saffron-02: rgba(234, 99, 87, 0.38);
+  --light-spectrum-saffron-03: rgba(234, 99, 87, 0.24);
+  --light-spectrum-saffron-04: rgba(234, 99, 87, 0.15);
+  --light-spectrum-saffron-05: rgba(234, 99, 87, 0.09);
+  --light-spectrum-saffron-06: rgba(234, 99, 87, 0.05);
+  --light-spectrum-saffron-07: rgba(234, 99, 87, 0.04);
+  --light-spectrum-saffron-08: rgba(234, 99, 87, 0.02);
+  --light-spectrum-ocean-00: #0094de;
+  --light-spectrum-ocean-01: rgba(0, 148, 222, 0.62);
+  --light-spectrum-ocean-02: rgba(0, 148, 222, 0.38);
+  --light-spectrum-ocean-03: rgba(0, 148, 222, 0.24);
+  --light-spectrum-ocean-04: rgba(0, 148, 222, 0.15);
+  --light-spectrum-ocean-05: rgba(0, 148, 222, 0.09);
+  --light-spectrum-ocean-06: rgba(0, 148, 222, 0.05);
+  --light-spectrum-ocean-07: rgba(0, 148, 222, 0.04);
+  --light-spectrum-ocean-08: rgba(0, 148, 222, 0.02);
+  --light-spectrum-peony-00: #df5ab0;
+  --light-spectrum-peony-01: rgba(223, 90, 176, 0.62);
+  --light-spectrum-peony-02: rgba(223, 90, 176, 0.38);
+  --light-spectrum-peony-03: rgba(223, 90, 176, 0.24);
+  --light-spectrum-peony-04: rgba(223, 90, 176, 0.15);
+  --light-spectrum-peony-05: rgba(223, 90, 176, 0.09);
+  --light-spectrum-peony-06: rgba(223, 90, 176, 0.05);
+  --light-spectrum-peony-07: rgba(223, 90, 176, 0.04);
+  --light-spectrum-peony-08: rgba(223, 90, 176, 0.02);
+  --light-spectrum-cinnamon-00: #b28700;
+  --light-spectrum-cinnamon-01: rgba(178, 135, 0, 0.62);
+  --light-spectrum-cinnamon-02: rgba(178, 135, 0, 0.38);
+  --light-spectrum-cinnamon-03: rgba(178, 135, 0, 0.24);
+  --light-spectrum-cinnamon-04: rgba(178, 135, 0, 0.15);
+  --light-spectrum-cinnamon-05: rgba(178, 135, 0, 0.09);
+  --light-spectrum-cinnamon-06: rgba(178, 135, 0, 0.05);
+  --light-spectrum-cinnamon-07: rgba(178, 135, 0, 0.04);
+  --light-spectrum-cinnamon-08: rgba(178, 135, 0, 0.02);
+  --light-spectrum-lichen-00: #509e42;
+  --light-spectrum-lichen-01: rgba(80, 158, 66, 0.62);
+  --light-spectrum-lichen-02: rgba(80, 158, 66, 0.38);
+  --light-spectrum-lichen-03: rgba(80, 158, 66, 0.24);
+  --light-spectrum-lichen-04: rgba(80, 158, 66, 0.15);
+  --light-spectrum-lichen-05: rgba(80, 158, 66, 0.09);
+  --light-spectrum-lichen-06: rgba(80, 158, 66, 0.05);
+  --light-spectrum-lichen-07: rgba(80, 158, 66, 0.04);
+  --light-spectrum-lichen-08: rgba(80, 158, 66, 0.02);
+  --light-spectrum-aurora-00: #009e90;
+  --light-spectrum-aurora-01: rgba(0, 158, 144, 0.62);
+  --light-spectrum-aurora-02: rgba(0, 158, 144, 0.38);
+  --light-spectrum-aurora-03: rgba(0, 158, 144, 0.24);
+  --light-spectrum-aurora-04: rgba(0, 158, 144, 0.15);
+  --light-spectrum-aurora-05: rgba(0, 158, 144, 0.09);
+  --light-spectrum-aurora-06: rgba(0, 158, 144, 0.05);
+  --light-spectrum-aurora-07: rgba(0, 158, 144, 0.04);
+  --light-spectrum-aurora-08: rgba(0, 158, 144, 0.02);
+  --light-spectrum-wisteria-00: #6987ef;
+  --light-spectrum-wisteria-01: rgba(105, 135, 239, 0.62);
+  --light-spectrum-wisteria-02: rgba(105, 135, 239, 0.38);
+  --light-spectrum-wisteria-03: rgba(105, 135, 239, 0.24);
+  --light-spectrum-wisteria-04: rgba(105, 135, 239, 0.15);
+  --light-spectrum-wisteria-05: rgba(105, 135, 239, 0.09);
+  --light-spectrum-wisteria-06: rgba(105, 135, 239, 0.05);
+  --light-spectrum-wisteria-07: rgba(105, 135, 239, 0.04);
+  --light-spectrum-wisteria-08: rgba(105, 135, 239, 0.02);
+  --light-spectrum-all: linear-gradient(
+    90deg,
+    #df5ab0 0%,
+    #ea6357 17%,
+    #509e42 33%,
+    #009e90 50%,
+    #0094de,
+    #6987ef 100%
+  );
+  --named-intermediate: 20px;
+  --named-large: 32px;
+  --named-medium: 24px;
+  --named-micro: 8px;
+  --named-mini: 12px;
+  --named-moderate: 28px;
+  --named-nano: 4px;
+  --named-pico: 2px;
+  --named-small: 16px;
+  --shadow-level-00:
+    0 31.333px 23px 0 rgba(0, 0, 0, 0.09), 0 9.446px 6.934px 0 rgba(0, 0, 0, 0.05),
+    0 3.923px 2.88px 0 rgba(0, 0, 0, 0.04), 0 1.419px 1.042px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-level-01:
+    0 62.667px 46px 0 rgba(0, 0, 0, 0.09), 0 18.891px 13.867px 0 rgba(0, 0, 0, 0.05),
+    0 7.847px 5.76px 0 rgba(0, 0, 0, 0.04), 0 2.838px 2.083px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-level-02:
+    0 94px 69px 0 rgba(0, 0, 0, 0.09), 0 28.338px 20.801px 0 rgba(0, 0, 0, 0.05),
+    0 11.77px 8.64px 0 rgba(0, 0, 0, 0.04), 0 4.257px 3.125px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sheet-00:
+    0 -31.333px 23px 0 rgba(0, 0, 0, 0.09), 0 -9.446px 6.934px 0 rgba(0, 0, 0, 0.05),
+    0 -3.923px 2.88px 0 rgba(0, 0, 0, 0.04), 0 -1.419px 1.042px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sheet-01:
+    0 -62.667px 46px 0 rgba(0, 0, 0, 0.09), 0 -18.891px 13.867px 0 rgba(0, 0, 0, 0.05),
+    0 -7.847px 5.76px 0 rgba(0, 0, 0, 0.04), 0 -2.838px 2.083px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sheet-02:
+    0 -94px 69px 0 rgba(0, 0, 0, 0.09), 0 -28.338px 20.801px 0 rgba(0, 0, 0, 0.05),
+    0 -11.77px 8.64px 0 rgba(0, 0, 0, 0.04), 0 -4.257px 3.125px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --sizing-named-abundant: 40px;
+  --sizing-named-colossal: 112px;
+  --sizing-named-cosmic: 192px;
+  --sizing-named-galactic: 160px;
+  --sizing-named-generous: 36px;
+  --sizing-named-giant: 80px;
+  --sizing-named-grand: 72px;
+  --sizing-named-great: 56px;
+  --sizing-named-half: 50%;
+  --sizing-named-bigforpill: 9999px;
+  --sizing-named-intermediate: 20px;
+  --sizing-named-huge: 48px;
+  --sizing-named-jumbo: 64px;
+  --sizing-named-large: 32px;
+  --sizing-named-massive: 96px;
+  --sizing-named-medium: 24px;
+  --sizing-named-micro: 8px;
+  --sizing-named-mini: 12px;
+  --sizing-named-moderate: 28px;
+  --sizing-named-nano: 4px;
+  --sizing-named-pico: 2px;
+  --sizing-named-planetary: 128px;
+  --sizing-named-small: 16px;
+  --sizing-named-stellar: 144px;
+  --sizing-unit: 8px;
+  --surface-action-primary-emphasis-00: rgba(0, 0, 0, 0.15);
+  --surface-action-primary-emphasis-01: rgba(0, 0, 0, 0.09);
+  --surface-action-primary-emphasis-03: rgba(0, 0, 0, 0.05);
+  --surface-action-primary-emphasis-04: rgba(0, 0, 0, 0.04);
+  --surface-action-secondary-emphasis-00: rgba(38, 156, 133, 0.15);
+  --surface-action-secondary-emphasis-01: rgba(38, 156, 133, 0.09);
+  --surface-action-secondary-emphasis-03: rgba(38, 156, 133, 0.05);
+  --surface-action-secondary-emphasis-04: rgba(38, 156, 133, 0.04);
+  --surface-level-00-emphasis-00: rgba(0, 0, 0, 0.05);
+  --surface-level-00-emphasis-opaque-00: #f2f2f2;
+  --surface-level-01-emphasis-00: #ffffff;
+  --surface-level-01-emphasis-01: rgba(255, 255, 255, 0.62);
+  --surface-level-01-emphasis-02: rgba(255, 255, 255, 0.38);
+  --surface-level-01-emphasis-03: rgba(255, 255, 255, 0.38);
+  --surface-level-01-emphasis-opaque-00: #ffffff;
+  --surface-level-01-emphasis-opaque-01: #9e9e9e;
+  --surface-level-01-emphasis-opaque-02: #616161;
+  --surface-level-01-emphasis-opaque-03: #616161;
+  --surface-level-02-emphasis-00: rgba(0, 0, 0, 0.15);
+  --surface-level-02-emphasis-01: rgba(0, 0, 0, 0.09);
+  --surface-level-02-emphasis-02: rgba(0, 0, 0, 0.05);
+  --surface-level-02-emphasis-03: rgba(0, 0, 0, 0.04);
+  --surface-level-02-emphasis-opaque-00: #e8e8e8;
+  --surface-level-02-emphasis-opaque-01: #f2f2f2;
+  --surface-level-02-emphasis-opaque-02: #f5f5f5;
+  --surface-level-02-emphasis-opaque-03: #f5f5f5;
+  --surface-signal-action-emphasis-00: rgba(0, 0, 0, 0.15);
+  --surface-signal-action-emphasis-01: rgba(0, 0, 0, 0.09);
+  --surface-signal-action-emphasis-03: rgba(0, 0, 0, 0.05);
+  --surface-signal-action-emphasis-04: rgba(0, 0, 0, 0.04);
+  --surface-signal-caution-emphasis-00: rgba(178, 135, 0, 0.15);
+  --surface-signal-caution-emphasis-01: rgba(178, 135, 0, 0.09);
+  --surface-signal-caution-emphasis-03: rgba(178, 135, 0, 0.05);
+  --surface-signal-caution-emphasis-04: rgba(178, 135, 0, 0.04);
+  --surface-signal-go-emphasis-00: rgba(80, 158, 66, 0.15);
+  --surface-signal-go-emphasis-01: rgba(80, 158, 66, 0.09);
+  --surface-signal-go-emphasis-03: rgba(80, 158, 66, 0.05);
+  --surface-signal-go-emphasis-04: rgba(80, 158, 66, 0.04);
+  --surface-signal-guide-emphasis-00: rgba(0, 148, 222, 0.15);
+  --surface-signal-guide-emphasis-01: rgba(0, 148, 222, 0.09);
+  --surface-signal-guide-emphasis-03: rgba(0, 148, 222, 0.05);
+  --surface-signal-guide-emphasis-04: rgba(0, 148, 222, 0.04);
+  --surface-signal-stop-emphasis-00: rgba(234, 99, 87, 0.15);
+  --surface-signal-stop-emphasis-01: rgba(234, 99, 87, 0.09);
+  --surface-signal-stop-emphasis-03: rgba(234, 99, 87, 0.05);
+  --surface-signal-stop-emphasis-04: rgba(234, 99, 87, 0.04);
+  --surface-spectrum-saffron-emphasis-00: rgba(234, 99, 87, 0.15);
+  --surface-spectrum-saffron-emphasis-01: rgba(234, 99, 87, 0.09);
+  --surface-spectrum-saffron-emphasis-03: rgba(234, 99, 87, 0.05);
+  --surface-spectrum-saffron-emphasis-04: rgba(234, 99, 87, 0.04);
+  --surface-spectrum-ocean-emphasis-00: rgba(0, 148, 222, 0.15);
+  --surface-spectrum-ocean-emphasis-01: rgba(0, 148, 222, 0.09);
+  --surface-spectrum-ocean-emphasis-03: rgba(0, 148, 222, 0.05);
+  --surface-spectrum-ocean-emphasis-04: rgba(0, 148, 222, 0.04);
+  --surface-spectrum-peony-emphasis-00: rgba(223, 90, 176, 0.15);
+  --surface-spectrum-peony-emphasis-01: rgba(223, 90, 176, 0.09);
+  --surface-spectrum-peony-emphasis-03: rgba(223, 90, 176, 0.05);
+  --surface-spectrum-peony-emphasis-04: rgba(223, 90, 176, 0.04);
+  --surface-spectrum-cinnamon-emphasis-00: rgba(178, 135, 0, 0.15);
+  --surface-spectrum-cinnamon-emphasis-01: rgba(178, 135, 0, 0.09);
+  --surface-spectrum-cinnamon-emphasis-03: rgba(178, 135, 0, 0.05);
+  --surface-spectrum-cinnamon-emphasis-04: rgba(178, 135, 0, 0.04);
+  --surface-spectrum-lichen-emphasis-00: rgba(80, 158, 66, 0.15);
+  --surface-spectrum-lichen-emphasis-01: rgba(80, 158, 66, 0.09);
+  --surface-spectrum-lichen-emphasis-03: rgba(80, 158, 66, 0.05);
+  --surface-spectrum-lichen-emphasis-04: rgba(80, 158, 66, 0.04);
+  --surface-spectrum-aurora-emphasis-00: rgba(0, 158, 144, 0.15);
+  --surface-spectrum-aurora-emphasis-01: rgba(0, 158, 144, 0.09);
+  --surface-spectrum-aurora-emphasis-03: rgba(0, 158, 144, 0.05);
+  --surface-spectrum-aurora-emphasis-04: rgba(0, 158, 144, 0.04);
+  --surface-spectrum-wisteria-emphasis-00: rgba(105, 135, 239, 0.15);
+  --surface-spectrum-wisteria-emphasis-01: rgba(105, 135, 239, 0.09);
+  --surface-spectrum-wisteria-emphasis-03: rgba(105, 135, 239, 0.05);
+  --surface-spectrum-wisteria-emphasis-04: rgba(105, 135, 239, 0.04);
+  --test: -4px;
+  --typography-numbers-body1-base: 400 16px/1.25 'DM Mono';
+  --typography-numbers-body1-strong: 500 16px/1.25 'DM Mono';
+  --typography-numbers-body2-base: 400 14px/1.1428571428571428 'DM Mono';
+  --typography-numbers-body2-strong: 500 14px/1.1428571428571428 'DM Mono';
+  --typography-numbers-caption1-base: 400 12px/1.1666666666666667 'DM Mono';
+  --typography-numbers-caption1-strong: 500 12px/1.1666666666666667 'DM Mono';
+  --typography-numbers-caption2-base: 400 11px/1.0909090909090908 'DM Mono';
+  --typography-numbers-caption2-strong: 500 11px/1.0909090909090908 'DM Mono';
+  --typography-numbers-caption3-strong: 500 10px/1.2 'DM Mono';
+  --typography-numbers-display1-base: 500 48px/1 'DM Mono';
+  --typography-numbers-display2-base: 500 40px/1 'DM Mono';
+  --typography-numbers-display3-base: 500 36px/1 'DM Mono';
+  --typography-numbers-stub-strong: 500 10px/1.2 'DM Mono';
+  --typography-text-body0-open: 400 18px/1.3333333333333333 'DM Sans';
+  --typography-text-body1-base: 400 16px/1.25 'DM Sans';
+  --typography-text-body1-open: 400 16px/1.5 'DM Sans';
+  --typography-text-body1-strong: 600 16px/1.25 'DM Sans';
+  --typography-text-body2-base: 400 14px/1.1428571428571428 'DM Sans';
+  --typography-text-body2-open: 400 14px/1.5 'DM Sans';
+  --typography-text-body2-strong: 600 14px/1.1428571428571428 'DM Sans';
+  --typography-text-caption1-base: 400 12px/1.1666666666666667 'DM Sans';
+  --typography-text-caption1-strong: 600 12px/1.1666666666666667 'DM Sans';
+  --typography-text-caption2-base: 400 11px/1.0909090909090908 'DM Sans';
+  --typography-text-caption2-strong: 600 11px/1.0909090909090908 'DM Sans';
+  --typography-text-caption3-strong: 600 10px/1.2 'DM Sans';
+  --typography-text-display1-base: 500 48px/1.1666666666666667 'DM Sans';
+  --typography-text-display2-base: 500 40px/1.2 'DM Sans';
+  --typography-text-display3-base: 500 36px/1.1111111111111112 'DM Sans';
+  --typography-text-heading1-base: 500 32px/1.125 'DM Sans';
+  --typography-text-heading1-strong: 600 32px/1.125 'DM Sans';
+  --typography-text-heading2-base: 500 28px/1.1428571428571428 'DM Sans';
+  --typography-text-heading2-strong: 600 28px/1.1428571428571428 'DM Sans';
+  --typography-text-heading3-base: 500 24px/1.1666666666666667 'DM Sans';
+  --typography-text-heading3-strong: 600 24px/1.1666666666666667 'DM Sans';
+  --typography-text-heading4-strong: 600 20px/1.2 'DM Sans';
+  --typography-text-stub-strong: 600 10px/1.2 'DM Sans';
+  --animation-switch-knob-duration: 0.23s;
+  --animation-switch-knob-easing: cubic-bezier(0.33, 1, 0.68, 1);
+  --animation-switch-track-duration: 0.38s;
+  --animation-switch-track-easing: cubic-bezier(0.33, 1, 0.68, 1);
+  --control-generous-border-radius: 8px;
+  --control-generous-padding-both: 8px;
+  --control-generous-padding-horizontal: 12px;
+  --control-generous-padding-vertical: 8px;
+  --control-great-border-radius: 12px;
+  --control-great-padding-both: 16px;
+  --control-great-padding-horizontal: 18px;
+  --control-great-padding-vertical: 16px;
+  --control-jumbo-border-radius: 12px;
+  --control-grand-border-radius: 16px;
+  --control-giant-border-radius: 16px;
+  --control-massive-border-radius: 20px;
+  --control-huge-border-radius: 10px;
+  --control-huge-padding-both: 14px;
+  --control-huge-padding-horizontal: 16px;
+  --control-huge-padding-vertical: 14px;
+  --control-intermediate-padding-both: 4px;
+  --control-intermediate-padding-horizontal: 6px;
+  --control-intermediate-padding-vertical: 4px;
+  --control-medium-border-radius: 4px;
+  --control-medium-padding-both: 5px;
+  --control-medium-padding-horizontal: 8px;
+  --control-medium-padding-vertical: 5px;
+  --control-moderate-border-radius: 6px;
+  --control-moderate-padding-both: 6px;
+  --control-moderate-padding-horizontal: 9px;
+  --control-moderate-padding-vertical: 6px;
+  --control-pill-border-radius: 9999px;
+  --control-small-padding-both: 2px;
+  --control-small-padding-horizontal: 4px;
+  --control-small-padding-vertical: 2px;
+  --control-border-width: 1px;
+  --control-large-border-radius: 6px;
+  --controls-generous-min-height: 36px;
+  --controls-generous-min-width: 36px;
+  --controls-great-min-height: 56px;
+  --controls-great-min-width: 56px;
+  --controls-huge-min-height: 48px;
+  --controls-huge-min-width: 48px;
+  --controls-level-00-shadow:
+    0 31.333px 23px 0 rgba(0, 0, 0, 0.09), 0 9.446px 6.934px 0 rgba(0, 0, 0, 0.05),
+    0 3.923px 2.88px 0 rgba(0, 0, 0, 0.04), 0 1.419px 1.042px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --controls-level-01-shadow:
+    0 62.667px 46px 0 rgba(0, 0, 0, 0.09), 0 18.891px 13.867px 0 rgba(0, 0, 0, 0.05),
+    0 7.847px 5.76px 0 rgba(0, 0, 0, 0.04), 0 2.838px 2.083px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --controls-level-02-shadow:
+    0 94px 69px 0 rgba(0, 0, 0, 0.09), 0 28.338px 20.801px 0 rgba(0, 0, 0, 0.05),
+    0 11.77px 8.64px 0 rgba(0, 0, 0, 0.04), 0 4.257px 3.125px 0 rgba(0, 0, 0, 0.02), 0 0 1px 0 rgba(0, 0, 0, 0.15);
+  --controls-medium-min-height: 24px;
+  --controls-medium-min-width: 24px;
+  --controls-moderate-min-height: 28px;
+  --controls-moderate-min-width: 28px;
+  --controls-intermediate-min-height: 20px;
+  --controls-intermediate-min-width: 20px;
+  --controls-small-min-height: 16px;
+  --controls-small-min-width: 16px;
+  --message-generous-border-radius: 18px;
+  --message-generous-padding-horizontal: 12px;
+  --message-generous-padding-vertical: 8px;
+  --message-great-border-radius: 28px;
+  --message-great-padding-horizontal: 20px;
+  --message-great-padding-vertical: 14px;
+  --message-huge-border-radius: 24px;
+  --message-huge-padding-horizontal: 16px;
+  --message-huge-padding-vertical: 12px;
+  --message-max-width: 720px;
+  --message-large-padding-horizontal: 8px;
+  --message-large-padding-vertical: 6px;
+  --primitives-divider-thickness: 1px;
+  --modal-small-max-width: 480px;
+  --modal-medium-max-width: 600px;
+  --modal-large-max-width: 992px;
+  --pulser-mini-width: 24px;
+  --pulser-mini-height: 12px;
+  --pulser-micro-width: 16px;
+  --pulser-micro-height: 8px;
+  --pulser-small-width: 32px;
+  --pulser-small-height: 16px;
+  --pulser-intermediate-width: 32px;
+  --pulser-intermediate-height: 20px;
+  --element-action-primary-emphasis-00: #000000;
+  --element-action-primary-emphasis-01: rgba(0, 0, 0, 0.62);
+  --element-action-primary-emphasis-03: rgba(0, 0, 0, 0.38);
+  --element-action-primary-emphasis-04: rgba(0, 0, 0, 0.24);
+  --element-action-secondary-emphasis-00: #269c85;
+  --element-action-secondary-emphasis-01: rgba(38, 156, 133, 0.62);
+  --element-action-secondary-emphasis-03: rgba(38, 156, 133, 0.38);
+  --element-action-secondary-emphasis-04: rgba(38, 156, 133, 0.24);
+  --element-emphasis-00: #000000;
+  --element-emphasis-01: rgba(0, 0, 0, 0.62);
+  --element-emphasis-02: rgba(0, 0, 0, 0.38);
+  --element-emphasis-03: rgba(0, 0, 0, 0.24);
+  --element-reverse-emphasis-00: #ffffff;
+  --element-reverse-emphasis-01: rgba(255, 255, 255, 0.62);
+  --element-reverse-emphasis-02: rgba(255, 255, 255, 0.38);
+  --element-reverse-emphasis-03: rgba(255, 255, 255, 0.24);
+  --element-signal-caution-emphasis-00: #b28700;
+  --element-signal-caution-emphasis-01: rgba(178, 135, 0, 0.62);
+  --element-signal-caution-emphasis-03: rgba(178, 135, 0, 0.38);
+  --element-signal-caution-emphasis-04: rgba(178, 135, 0, 0.24);
+  --element-signal-go-emphasis-00: #509e42;
+  --element-signal-go-emphasis-01: rgba(80, 158, 66, 0.62);
+  --element-signal-go-emphasis-03: rgba(80, 158, 66, 0.38);
+  --element-signal-go-emphasis-04: rgba(80, 158, 66, 0.24);
+  --element-signal-guide-emphasis-00: #0094de;
+  --element-signal-guide-emphasis-01: rgba(0, 148, 222, 0.62);
+  --element-signal-guide-emphasis-03: rgba(0, 148, 222, 0.38);
+  --element-signal-guide-emphasis-04: rgba(0, 148, 222, 0.24);
+  --element-signal-stop-emphasis-00: #ea6357;
+  --element-signal-stop-emphasis-01: rgba(234, 99, 87, 0.62);
+  --element-signal-stop-emphasis-03: rgba(234, 99, 87, 0.38);
+  --element-signal-stop-emphasis-04: rgba(234, 99, 87, 0.24);
+  --element-spectrum-saffron-emphasis-00: #ea6357;
+  --element-spectrum-saffron-emphasis-01: rgba(234, 99, 87, 0.62);
+  --element-spectrum-saffron-emphasis-03: rgba(234, 99, 87, 0.38);
+  --element-spectrum-saffron-emphasis-04: rgba(234, 99, 87, 0.24);
+  --element-spectrum-ocean-emphasis-00: #0094de;
+  --element-spectrum-ocean-emphasis-01: rgba(0, 148, 222, 0.62);
+  --element-spectrum-ocean-emphasis-03: rgba(0, 148, 222, 0.38);
+  --element-spectrum-ocean-emphasis-04: rgba(0, 148, 222, 0.24);
+  --element-spectrum-peony-emphasis-00: #df5ab0;
+  --element-spectrum-peony-emphasis-01: rgba(223, 90, 176, 0.62);
+  --element-spectrum-peony-emphasis-03: rgba(223, 90, 176, 0.38);
+  --element-spectrum-peony-emphasis-04: rgba(223, 90, 176, 0.24);
+  --element-spectrum-cinnamon-emphasis-00: #b28700;
+  --element-spectrum-cinnamon-emphasis-01: rgba(178, 135, 0, 0.62);
+  --element-spectrum-cinnamon-emphasis-03: rgba(178, 135, 0, 0.38);
+  --element-spectrum-cinnamon-emphasis-04: rgba(178, 135, 0, 0.24);
+  --element-spectrum-lichen-emphasis-00: #509e42;
+  --element-spectrum-lichen-emphasis-01: rgba(80, 158, 66, 0.62);
+  --element-spectrum-lichen-emphasis-03: rgba(80, 158, 66, 0.38);
+  --element-spectrum-lichen-emphasis-04: rgba(80, 158, 66, 0.24);
+  --element-spectrum-aurora-emphasis-00: #009e90;
+  --element-spectrum-aurora-emphasis-01: rgba(0, 158, 144, 0.62);
+  --element-spectrum-aurora-emphasis-03: rgba(0, 158, 144, 0.38);
+  --element-spectrum-aurora-emphasis-04: rgba(0, 158, 144, 0.24);
+  --element-spectrum-wisteria-emphasis-00: #6987ef;
+  --element-spectrum-wisteria-emphasis-01: rgba(105, 135, 239, 0.62);
+  --element-spectrum-wisteria-emphasis-03: rgba(105, 135, 239, 0.38);
+  --element-spectrum-wisteria-emphasis-04: rgba(105, 135, 239, 0.24);
+  --element-spectrum-all: linear-gradient(
+    90deg,
+    #df5ab0 0%,
+    #ea6357 17%,
+    #509e42 33%,
+    #009e90 50%,
+    #0094de,
+    #6987ef 100%
+  );
+  --window-tab-max-width: 112px;
+  --thumbnail-extra-small-width: 112px;
+  --thumbnail-extra-small-height: 112px;
+  --thumbnail-extra-small-border-radius: 8px;
+  --thumbnail-small-width: 192px;
+  --thumbnail-small-height: 192px;
+  --thumbnail-small-border-radius: 12px;
+  --thumbnail-medium-width: 280px;
+  --thumbnail-medium-height: 280px;
+  --thumbnail-medium-border-radius: 16px;
+  --thumbnail-large-width: 320px;
+  --thumbnail-large-height: 320px;
+  --thumbnail-large-border-radius: 20px;
+  --thumbnail-extra-large-width: 360px;
+  --thumbnail-extra-large-height: 360px;
+  --thumbnail-extra-large-border-radius: 24px;
+  --always-black-emphasis-00: #000000;
+  --always-black-emphasis-01: rgba(0, 0, 0, 0.62);
+  --always-black-emphasis-02: rgba(0, 0, 0, 0.38);
+  --always-black-emphasis-03: rgba(0, 0, 0, 0.24);
+  --always-white-emphasis-00: #ffffff;
+  --always-white-emphasis-01: rgba(255, 255, 255, 0.62);
+  --always-white-emphasis-02: rgba(255, 255, 255, 0.38);
+  --always-white-emphasis-03: rgba(255, 255, 255, 0.24);
+  --navigation-drawer-surface: rgba(0, 0, 0, 0.05);
+  --navigation-rail-surface: rgba(0, 0, 0, 0.05);
+}
+.dark-brand-primary-00 {
+  color: var(--dark-brand-primary-00);
+}
+.dark-brand-primary-01 {
+  color: var(--dark-brand-primary-01);
+}
+.dark-brand-primary-02 {
+  color: var(--dark-brand-primary-02);
+}
+.dark-brand-primary-03 {
+  color: var(--dark-brand-primary-03);
+}
+.dark-brand-primary-04 {
+  color: var(--dark-brand-primary-04);
+}
+.dark-brand-primary-05 {
+  color: var(--dark-brand-primary-05);
+}
+.dark-brand-primary-06 {
+  color: var(--dark-brand-primary-06);
+}
+.dark-brand-primary-07 {
+  color: var(--dark-brand-primary-07);
+}
+.dark-brand-primary-08 {
+  color: var(--dark-brand-primary-08);
+}
+.dark-brand-secondary-00 {
+  color: var(--dark-brand-secondary-00);
+}
+.dark-brand-secondary-01 {
+  color: var(--dark-brand-secondary-01);
+}
+.dark-brand-secondary-02 {
+  color: var(--dark-brand-secondary-02);
+}
+.dark-brand-secondary-03 {
+  color: var(--dark-brand-secondary-03);
+}
+.dark-brand-secondary-04 {
+  color: var(--dark-brand-secondary-04);
+}
+.dark-brand-secondary-05 {
+  color: var(--dark-brand-secondary-05);
+}
+.dark-brand-secondary-06 {
+  color: var(--dark-brand-secondary-06);
+}
+.dark-brand-secondary-07 {
+  color: var(--dark-brand-secondary-07);
+}
+.dark-brand-secondary-08 {
+  color: var(--dark-brand-secondary-08);
+}
+.dark-spectrum-saffron-00 {
+  color: var(--dark-spectrum-saffron-00);
+}
+.dark-spectrum-saffron-01 {
+  color: var(--dark-spectrum-saffron-01);
+}
+.dark-spectrum-saffron-02 {
+  color: var(--dark-spectrum-saffron-02);
+}
+.dark-spectrum-saffron-03 {
+  color: var(--dark-spectrum-saffron-03);
+}
+.dark-spectrum-saffron-04 {
+  color: var(--dark-spectrum-saffron-04);
+}
+.dark-spectrum-saffron-05 {
+  color: var(--dark-spectrum-saffron-05);
+}
+.dark-spectrum-saffron-06 {
+  color: var(--dark-spectrum-saffron-06);
+}
+.dark-spectrum-saffron-07 {
+  color: var(--dark-spectrum-saffron-07);
+}
+.dark-spectrum-saffron-08 {
+  color: var(--dark-spectrum-saffron-08);
+}
+.dark-spectrum-ocean-00 {
+  color: var(--dark-spectrum-ocean-00);
+}
+.dark-spectrum-ocean-01 {
+  color: var(--dark-spectrum-ocean-01);
+}
+.dark-spectrum-ocean-02 {
+  color: var(--dark-spectrum-ocean-02);
+}
+.dark-spectrum-ocean-03 {
+  color: var(--dark-spectrum-ocean-03);
+}
+.dark-spectrum-ocean-04 {
+  color: var(--dark-spectrum-ocean-04);
+}
+.dark-spectrum-ocean-05 {
+  color: var(--dark-spectrum-ocean-05);
+}
+.dark-spectrum-ocean-06 {
+  color: var(--dark-spectrum-ocean-06);
+}
+.dark-spectrum-ocean-07 {
+  color: var(--dark-spectrum-ocean-07);
+}
+.dark-spectrum-ocean-08 {
+  color: var(--dark-spectrum-ocean-08);
+}
+.dark-spectrum-peony-00 {
+  color: var(--dark-spectrum-peony-00);
+}
+.dark-spectrum-peony-01 {
+  color: var(--dark-spectrum-peony-01);
+}
+.dark-spectrum-peony-02 {
+  color: var(--dark-spectrum-peony-02);
+}
+.dark-spectrum-peony-03 {
+  color: var(--dark-spectrum-peony-03);
+}
+.dark-spectrum-peony-04 {
+  color: var(--dark-spectrum-peony-04);
+}
+.dark-spectrum-peony-05 {
+  color: var(--dark-spectrum-peony-05);
+}
+.dark-spectrum-peony-06 {
+  color: var(--dark-spectrum-peony-06);
+}
+.dark-spectrum-peony-07 {
+  color: var(--dark-spectrum-peony-07);
+}
+.dark-spectrum-peony-08 {
+  color: var(--dark-spectrum-peony-08);
+}
+.dark-spectrum-cinnamon-00 {
+  color: var(--dark-spectrum-cinnamon-00);
+}
+.dark-spectrum-cinnamon-01 {
+  color: var(--dark-spectrum-cinnamon-01);
+}
+.dark-spectrum-cinnamon-02 {
+  color: var(--dark-spectrum-cinnamon-02);
+}
+.dark-spectrum-cinnamon-03 {
+  color: var(--dark-spectrum-cinnamon-03);
+}
+.dark-spectrum-cinnamon-04 {
+  color: var(--dark-spectrum-cinnamon-04);
+}
+.dark-spectrum-cinnamon-05 {
+  color: var(--dark-spectrum-cinnamon-05);
+}
+.dark-spectrum-cinnamon-06 {
+  color: var(--dark-spectrum-cinnamon-06);
+}
+.dark-spectrum-cinnamon-07 {
+  color: var(--dark-spectrum-cinnamon-07);
+}
+.dark-spectrum-cinnamon-08 {
+  color: var(--dark-spectrum-cinnamon-08);
+}
+.dark-spectrum-lichen-00 {
+  color: var(--dark-spectrum-lichen-00);
+}
+.dark-spectrum-lichen-01 {
+  color: var(--dark-spectrum-lichen-01);
+}
+.dark-spectrum-lichen-02 {
+  color: var(--dark-spectrum-lichen-02);
+}
+.dark-spectrum-lichen-03 {
+  color: var(--dark-spectrum-lichen-03);
+}
+.dark-spectrum-lichen-04 {
+  color: var(--dark-spectrum-lichen-04);
+}
+.dark-spectrum-lichen-05 {
+  color: var(--dark-spectrum-lichen-05);
+}
+.dark-spectrum-lichen-06 {
+  color: var(--dark-spectrum-lichen-06);
+}
+.dark-spectrum-lichen-07 {
+  color: var(--dark-spectrum-lichen-07);
+}
+.dark-spectrum-lichen-08 {
+  color: var(--dark-spectrum-lichen-08);
+}
+.dark-spectrum-aurora-00 {
+  color: var(--dark-spectrum-aurora-00);
+}
+.dark-spectrum-aurora-01 {
+  color: var(--dark-spectrum-aurora-01);
+}
+.dark-spectrum-aurora-02 {
+  color: var(--dark-spectrum-aurora-02);
+}
+.dark-spectrum-aurora-03 {
+  color: var(--dark-spectrum-aurora-03);
+}
+.dark-spectrum-aurora-04 {
+  color: var(--dark-spectrum-aurora-04);
+}
+.dark-spectrum-aurora-05 {
+  color: var(--dark-spectrum-aurora-05);
+}
+.dark-spectrum-aurora-06 {
+  color: var(--dark-spectrum-aurora-06);
+}
+.dark-spectrum-aurora-07 {
+  color: var(--dark-spectrum-aurora-07);
+}
+.dark-spectrum-aurora-08 {
+  color: var(--dark-spectrum-aurora-08);
+}
+.dark-spectrum-wisteria-00 {
+  color: var(--dark-spectrum-wisteria-00);
+}
+.dark-spectrum-wisteria-01 {
+  color: var(--dark-spectrum-wisteria-01);
+}
+.dark-spectrum-wisteria-02 {
+  color: var(--dark-spectrum-wisteria-02);
+}
+.dark-spectrum-wisteria-03 {
+  color: var(--dark-spectrum-wisteria-03);
+}
+.dark-spectrum-wisteria-04 {
+  color: var(--dark-spectrum-wisteria-04);
+}
+.dark-spectrum-wisteria-05 {
+  color: var(--dark-spectrum-wisteria-05);
+}
+.dark-spectrum-wisteria-06 {
+  color: var(--dark-spectrum-wisteria-06);
+}
+.dark-spectrum-wisteria-07 {
+  color: var(--dark-spectrum-wisteria-07);
+}
+.dark-spectrum-wisteria-08 {
+  color: var(--dark-spectrum-wisteria-08);
+}
+.dark-spectrum-all {
+  color: var(--dark-spectrum-all);
+}
+.draggable-origin {
+  opacity: var(--draggable-origin);
+}
+.font-family-dm-sans {
+  font-family: var(--font-family-dm-sans);
+}
+.font-family-dm-mono {
+  font-family: var(--font-family-dm-mono);
+}
+.font-weight-dm-sans-black {
+  font-weight: var(--font-weight-dm-sans-black);
+}
+.font-weight-dm-sans-bold {
+  font-weight: var(--font-weight-dm-sans-bold);
+}
+.font-weight-dm-sans-extrabold {
+  font-weight: var(--font-weight-dm-sans-extrabold);
+}
+.font-weight-dm-sans-extralight {
+  font-weight: var(--font-weight-dm-sans-extralight);
+}
+.font-weight-dm-sans-light {
+  font-weight: var(--font-weight-dm-sans-light);
+}
+.font-weight-dm-sans-medium {
+  font-weight: var(--font-weight-dm-sans-medium);
+}
+.font-weight-dm-sans-regular {
+  font-weight: var(--font-weight-dm-sans-regular);
+}
+.font-weight-dm-sans-semibold {
+  font-weight: var(--font-weight-dm-sans-semibold);
+}
+.font-weight-dm-sans-thin {
+  font-weight: var(--font-weight-dm-sans-thin);
+}
+.font-weight-dm-mono-light {
+  font-weight: var(--font-weight-dm-mono-light);
+}
+.font-weight-dm-mono-medium {
+  font-weight: var(--font-weight-dm-mono-medium);
+}
+.font-weight-dm-mono-regular {
+  font-weight: var(--font-weight-dm-mono-regular);
+}
+.grayscale-black-00 {
+  color: var(--grayscale-black-00);
+}
+.grayscale-black-01 {
+  color: var(--grayscale-black-01);
+}
+.grayscale-black-02 {
+  color: var(--grayscale-black-02);
+}
+.grayscale-black-03 {
+  color: var(--grayscale-black-03);
+}
+.grayscale-black-04 {
+  color: var(--grayscale-black-04);
+}
+.grayscale-black-05 {
+  color: var(--grayscale-black-05);
+}
+.grayscale-black-06 {
+  color: var(--grayscale-black-06);
+}
+.grayscale-black-07 {
+  color: var(--grayscale-black-07);
+}
+.grayscale-black-08 {
+  color: var(--grayscale-black-08);
+}
+.grayscale-black-opaque-00 {
+  color: var(--grayscale-black-opaque-00);
+}
+.grayscale-black-opaque-01 {
+  color: var(--grayscale-black-opaque-01);
+}
+.grayscale-black-opaque-02 {
+  color: var(--grayscale-black-opaque-02);
+}
+.grayscale-black-opaque-03 {
+  color: var(--grayscale-black-opaque-03);
+}
+.grayscale-black-opaque-04 {
+  color: var(--grayscale-black-opaque-04);
+}
+.grayscale-black-opaque-05 {
+  color: var(--grayscale-black-opaque-05);
+}
+.grayscale-black-opaque-06 {
+  color: var(--grayscale-black-opaque-06);
+}
+.grayscale-black-opaque-07 {
+  color: var(--grayscale-black-opaque-07);
+}
+.grayscale-black-opaque-08 {
+  color: var(--grayscale-black-opaque-08);
+}
+.grayscale-white-00 {
+  color: var(--grayscale-white-00);
+}
+.grayscale-white-01 {
+  color: var(--grayscale-white-01);
+}
+.grayscale-white-02 {
+  color: var(--grayscale-white-02);
+}
+.grayscale-white-03 {
+  color: var(--grayscale-white-03);
+}
+.grayscale-white-04 {
+  color: var(--grayscale-white-04);
+}
+.grayscale-white-05 {
+  color: var(--grayscale-white-05);
+}
+.grayscale-white-06 {
+  color: var(--grayscale-white-06);
+}
+.grayscale-white-07 {
+  color: var(--grayscale-white-07);
+}
+.grayscale-white-08 {
+  color: var(--grayscale-white-08);
+}
+.grayscale-white-opaque-00 {
+  color: var(--grayscale-white-opaque-00);
+}
+.grayscale-white-opaque-01 {
+  color: var(--grayscale-white-opaque-01);
+}
+.grayscale-white-opaque-02 {
+  color: var(--grayscale-white-opaque-02);
+}
+.grayscale-white-opaque-03 {
+  color: var(--grayscale-white-opaque-03);
+}
+.grayscale-white-opaque-04 {
+  color: var(--grayscale-white-opaque-04);
+}
+.grayscale-white-opaque-05 {
+  color: var(--grayscale-white-opaque-05);
+}
+.grayscale-white-opaque-06 {
+  color: var(--grayscale-white-opaque-06);
+}
+.grayscale-white-opaque-07 {
+  color: var(--grayscale-white-opaque-07);
+}
+.grayscale-white-opaque-08 {
+  color: var(--grayscale-white-opaque-08);
+}
+.light-brand-primary-00 {
+  color: var(--light-brand-primary-00);
+}
+.light-brand-primary-01 {
+  color: var(--light-brand-primary-01);
+}
+.light-brand-primary-02 {
+  color: var(--light-brand-primary-02);
+}
+.light-brand-primary-03 {
+  color: var(--light-brand-primary-03);
+}
+.light-brand-primary-04 {
+  color: var(--light-brand-primary-04);
+}
+.light-brand-primary-05 {
+  color: var(--light-brand-primary-05);
+}
+.light-brand-primary-06 {
+  color: var(--light-brand-primary-06);
+}
+.light-brand-primary-07 {
+  color: var(--light-brand-primary-07);
+}
+.light-brand-primary-08 {
+  color: var(--light-brand-primary-08);
+}
+.light-brand-secondary-00 {
+  color: var(--light-brand-secondary-00);
+}
+.light-brand-secondary-01 {
+  color: var(--light-brand-secondary-01);
+}
+.light-brand-secondary-02 {
+  color: var(--light-brand-secondary-02);
+}
+.light-brand-secondary-03 {
+  color: var(--light-brand-secondary-03);
+}
+.light-brand-secondary-04 {
+  color: var(--light-brand-secondary-04);
+}
+.light-brand-secondary-05 {
+  color: var(--light-brand-secondary-05);
+}
+.light-brand-secondary-06 {
+  color: var(--light-brand-secondary-06);
+}
+.light-brand-secondary-07 {
+  color: var(--light-brand-secondary-07);
+}
+.light-brand-secondary-08 {
+  color: var(--light-brand-secondary-08);
+}
+.light-spectrum-saffron-00 {
+  color: var(--light-spectrum-saffron-00);
+}
+.light-spectrum-saffron-01 {
+  color: var(--light-spectrum-saffron-01);
+}
+.light-spectrum-saffron-02 {
+  color: var(--light-spectrum-saffron-02);
+}
+.light-spectrum-saffron-03 {
+  color: var(--light-spectrum-saffron-03);
+}
+.light-spectrum-saffron-04 {
+  color: var(--light-spectrum-saffron-04);
+}
+.light-spectrum-saffron-05 {
+  color: var(--light-spectrum-saffron-05);
+}
+.light-spectrum-saffron-06 {
+  color: var(--light-spectrum-saffron-06);
+}
+.light-spectrum-saffron-07 {
+  color: var(--light-spectrum-saffron-07);
+}
+.light-spectrum-saffron-08 {
+  color: var(--light-spectrum-saffron-08);
+}
+.light-spectrum-ocean-00 {
+  color: var(--light-spectrum-ocean-00);
+}
+.light-spectrum-ocean-01 {
+  color: var(--light-spectrum-ocean-01);
+}
+.light-spectrum-ocean-02 {
+  color: var(--light-spectrum-ocean-02);
+}
+.light-spectrum-ocean-03 {
+  color: var(--light-spectrum-ocean-03);
+}
+.light-spectrum-ocean-04 {
+  color: var(--light-spectrum-ocean-04);
+}
+.light-spectrum-ocean-05 {
+  color: var(--light-spectrum-ocean-05);
+}
+.light-spectrum-ocean-06 {
+  color: var(--light-spectrum-ocean-06);
+}
+.light-spectrum-ocean-07 {
+  color: var(--light-spectrum-ocean-07);
+}
+.light-spectrum-ocean-08 {
+  color: var(--light-spectrum-ocean-08);
+}
+.light-spectrum-peony-00 {
+  color: var(--light-spectrum-peony-00);
+}
+.light-spectrum-peony-01 {
+  color: var(--light-spectrum-peony-01);
+}
+.light-spectrum-peony-02 {
+  color: var(--light-spectrum-peony-02);
+}
+.light-spectrum-peony-03 {
+  color: var(--light-spectrum-peony-03);
+}
+.light-spectrum-peony-04 {
+  color: var(--light-spectrum-peony-04);
+}
+.light-spectrum-peony-05 {
+  color: var(--light-spectrum-peony-05);
+}
+.light-spectrum-peony-06 {
+  color: var(--light-spectrum-peony-06);
+}
+.light-spectrum-peony-07 {
+  color: var(--light-spectrum-peony-07);
+}
+.light-spectrum-peony-08 {
+  color: var(--light-spectrum-peony-08);
+}
+.light-spectrum-cinnamon-00 {
+  color: var(--light-spectrum-cinnamon-00);
+}
+.light-spectrum-cinnamon-01 {
+  color: var(--light-spectrum-cinnamon-01);
+}
+.light-spectrum-cinnamon-02 {
+  color: var(--light-spectrum-cinnamon-02);
+}
+.light-spectrum-cinnamon-03 {
+  color: var(--light-spectrum-cinnamon-03);
+}
+.light-spectrum-cinnamon-04 {
+  color: var(--light-spectrum-cinnamon-04);
+}
+.light-spectrum-cinnamon-05 {
+  color: var(--light-spectrum-cinnamon-05);
+}
+.light-spectrum-cinnamon-06 {
+  color: var(--light-spectrum-cinnamon-06);
+}
+.light-spectrum-cinnamon-07 {
+  color: var(--light-spectrum-cinnamon-07);
+}
+.light-spectrum-cinnamon-08 {
+  color: var(--light-spectrum-cinnamon-08);
+}
+.light-spectrum-lichen-00 {
+  color: var(--light-spectrum-lichen-00);
+}
+.light-spectrum-lichen-01 {
+  color: var(--light-spectrum-lichen-01);
+}
+.light-spectrum-lichen-02 {
+  color: var(--light-spectrum-lichen-02);
+}
+.light-spectrum-lichen-03 {
+  color: var(--light-spectrum-lichen-03);
+}
+.light-spectrum-lichen-04 {
+  color: var(--light-spectrum-lichen-04);
+}
+.light-spectrum-lichen-05 {
+  color: var(--light-spectrum-lichen-05);
+}
+.light-spectrum-lichen-06 {
+  color: var(--light-spectrum-lichen-06);
+}
+.light-spectrum-lichen-07 {
+  color: var(--light-spectrum-lichen-07);
+}
+.light-spectrum-lichen-08 {
+  color: var(--light-spectrum-lichen-08);
+}
+.light-spectrum-aurora-00 {
+  color: var(--light-spectrum-aurora-00);
+}
+.light-spectrum-aurora-01 {
+  color: var(--light-spectrum-aurora-01);
+}
+.light-spectrum-aurora-02 {
+  color: var(--light-spectrum-aurora-02);
+}
+.light-spectrum-aurora-03 {
+  color: var(--light-spectrum-aurora-03);
+}
+.light-spectrum-aurora-04 {
+  color: var(--light-spectrum-aurora-04);
+}
+.light-spectrum-aurora-05 {
+  color: var(--light-spectrum-aurora-05);
+}
+.light-spectrum-aurora-06 {
+  color: var(--light-spectrum-aurora-06);
+}
+.light-spectrum-aurora-07 {
+  color: var(--light-spectrum-aurora-07);
+}
+.light-spectrum-aurora-08 {
+  color: var(--light-spectrum-aurora-08);
+}
+.light-spectrum-wisteria-00 {
+  color: var(--light-spectrum-wisteria-00);
+}
+.light-spectrum-wisteria-01 {
+  color: var(--light-spectrum-wisteria-01);
+}
+.light-spectrum-wisteria-02 {
+  color: var(--light-spectrum-wisteria-02);
+}
+.light-spectrum-wisteria-03 {
+  color: var(--light-spectrum-wisteria-03);
+}
+.light-spectrum-wisteria-04 {
+  color: var(--light-spectrum-wisteria-04);
+}
+.light-spectrum-wisteria-05 {
+  color: var(--light-spectrum-wisteria-05);
+}
+.light-spectrum-wisteria-06 {
+  color: var(--light-spectrum-wisteria-06);
+}
+.light-spectrum-wisteria-07 {
+  color: var(--light-spectrum-wisteria-07);
+}
+.light-spectrum-wisteria-08 {
+  color: var(--light-spectrum-wisteria-08);
+}
+.light-spectrum-all {
+  color: var(--light-spectrum-all);
+}
+.shadow-level-00 {
+  box-shadow: var(--shadow-level-00);
+}
+.shadow-level-01 {
+  box-shadow: var(--shadow-level-01);
+}
+.shadow-level-02 {
+  box-shadow: var(--shadow-level-02);
+}
+.shadow-sheet-00 {
+  box-shadow: var(--shadow-sheet-00);
+}
+.shadow-sheet-01 {
+  box-shadow: var(--shadow-sheet-01);
+}
+.shadow-sheet-02 {
+  box-shadow: var(--shadow-sheet-02);
+}
+.typography-numbers-body1-base {
+  font: var(--typography-numbers-body1-base);
+}
+.typography-numbers-body1-strong {
+  font: var(--typography-numbers-body1-strong);
+}
+.typography-numbers-body2-base {
+  font: var(--typography-numbers-body2-base);
+}
+.typography-numbers-body2-strong {
+  font: var(--typography-numbers-body2-strong);
+}
+.typography-numbers-caption1-base {
+  font: var(--typography-numbers-caption1-base);
+}
+.typography-numbers-caption1-strong {
+  font: var(--typography-numbers-caption1-strong);
+}
+.typography-numbers-caption2-base {
+  font: var(--typography-numbers-caption2-base);
+}
+.typography-numbers-caption2-strong {
+  font: var(--typography-numbers-caption2-strong);
+}
+.typography-numbers-caption3-strong {
+  font: var(--typography-numbers-caption3-strong);
+}
+.typography-numbers-display1-base {
+  font: var(--typography-numbers-display1-base);
+}
+.typography-numbers-display2-base {
+  font: var(--typography-numbers-display2-base);
+}
+.typography-numbers-display3-base {
+  font: var(--typography-numbers-display3-base);
+}
+.typography-numbers-stub-strong {
+  font: var(--typography-numbers-stub-strong);
+}
+.typography-text-body0-open {
+  font: var(--typography-text-body0-open);
+  letter-spacing: 0.0414px;
+}
+.typography-text-body1-base {
+  font: var(--typography-text-body1-base);
+  letter-spacing: 0.032px;
+}
+.typography-text-body1-open {
+  font: var(--typography-text-body1-open);
+  letter-spacing: 0.032px;
+}
+.typography-text-body1-strong {
+  font: var(--typography-text-body1-strong);
+  letter-spacing: 0.0256px;
+}
+.typography-text-body2-base {
+  font: var(--typography-text-body2-base);
+  letter-spacing: 0.0252px;
+}
+.typography-text-body2-open {
+  font: var(--typography-text-body2-open);
+  letter-spacing: 0.0252px;
+}
+.typography-text-body2-strong {
+  font: var(--typography-text-body2-strong);
+  letter-spacing: 0.019600000000000003px;
+}
+.typography-text-caption1-base {
+  font: var(--typography-text-caption1-base);
+  letter-spacing: 0.018000000000000002px;
+}
+.typography-text-caption1-strong {
+  font: var(--typography-text-caption1-strong);
+  letter-spacing: 0.0144px;
+}
+.typography-text-caption2-base {
+  font: var(--typography-text-caption2-base);
+  letter-spacing: 0.015400000000000002px;
+}
+.typography-text-caption2-strong {
+  font: var(--typography-text-caption2-strong);
+  letter-spacing: 0.012100000000000001px;
+}
+.typography-text-caption3-strong {
+  font: var(--typography-text-caption3-strong);
+  letter-spacing: 0.01px;
+}
+.typography-text-display1-base {
+  font: var(--typography-text-display1-base);
+  letter-spacing: 0.28800000000000003px;
+}
+.typography-text-display2-base {
+  font: var(--typography-text-display2-base);
+  letter-spacing: 0.2px;
+}
+.typography-text-display3-base {
+  font: var(--typography-text-display3-base);
+  letter-spacing: 0.16200000000000003px;
+}
+.typography-text-heading1-base {
+  font: var(--typography-text-heading1-base);
+  letter-spacing: 0.128px;
+}
+.typography-text-heading1-strong {
+  font: var(--typography-text-heading1-strong);
+  letter-spacing: 0.1024px;
+}
+.typography-text-heading2-base {
+  font: var(--typography-text-heading2-base);
+  letter-spacing: 0.09799999999999999px;
+}
+.typography-text-heading2-strong {
+  font: var(--typography-text-heading2-strong);
+  letter-spacing: 0.07840000000000001px;
+}
+.typography-text-heading3-base {
+  font: var(--typography-text-heading3-base);
+  letter-spacing: 0.07200000000000001px;
+}
+.typography-text-heading3-strong {
+  font: var(--typography-text-heading3-strong);
+  letter-spacing: 0.048px;
+}
+.typography-text-heading4-strong {
+  font: var(--typography-text-heading4-strong);
+  letter-spacing: 0.034px;
+}
+.typography-text-stub-strong {
+  font: var(--typography-text-stub-strong);
+  letter-spacing: 0.01px;
+}
+.controls-level-00-shadow {
+  box-shadow: var(--controls-level-00-shadow);
+}
+.controls-level-01-shadow {
+  box-shadow: var(--controls-level-01-shadow);
+}
+.controls-level-02-shadow {
+  box-shadow: var(--controls-level-02-shadow);
+}
+.element-disabled-opacity {
+  opacity: var(--element-disabled-opacity);
+}
+.surface-action-primary-emphasis-00 {
+  color: var(--surface-action-primary-emphasis-00);
+}
+.surface-action-primary-emphasis-01 {
+  color: var(--surface-action-primary-emphasis-01);
+}
+.surface-action-primary-emphasis-03 {
+  color: var(--surface-action-primary-emphasis-03);
+}
+.surface-action-primary-emphasis-04 {
+  color: var(--surface-action-primary-emphasis-04);
+}
+.surface-action-secondary-emphasis-00 {
+  color: var(--surface-action-secondary-emphasis-00);
+}
+.surface-action-secondary-emphasis-01 {
+  color: var(--surface-action-secondary-emphasis-01);
+}
+.surface-action-secondary-emphasis-03 {
+  color: var(--surface-action-secondary-emphasis-03);
+}
+.surface-action-secondary-emphasis-04 {
+  color: var(--surface-action-secondary-emphasis-04);
+}
+.surface-level-00-emphasis-00 {
+  color: var(--surface-level-00-emphasis-00);
+}
+.surface-level-00-emphasis-opaque-00 {
+  color: var(--surface-level-00-emphasis-opaque-00);
+}
+.surface-level-01-emphasis-00 {
+  color: var(--surface-level-01-emphasis-00);
+}
+.surface-level-01-emphasis-01 {
+  color: var(--surface-level-01-emphasis-01);
+}
+.surface-level-01-emphasis-02 {
+  color: var(--surface-level-01-emphasis-02);
+}
+.surface-level-01-emphasis-03 {
+  color: var(--surface-level-01-emphasis-03);
+}
+.surface-level-01-emphasis-opaque-00 {
+  color: var(--surface-level-01-emphasis-opaque-00);
+}
+.surface-level-01-emphasis-opaque-01 {
+  color: var(--surface-level-01-emphasis-opaque-01);
+}
+.surface-level-01-emphasis-opaque-02 {
+  color: var(--surface-level-01-emphasis-opaque-02);
+}
+.surface-level-01-emphasis-opaque-03 {
+  color: var(--surface-level-01-emphasis-opaque-03);
+}
+.surface-level-02-emphasis-00 {
+  color: var(--surface-level-02-emphasis-00);
+}
+.surface-level-02-emphasis-01 {
+  color: var(--surface-level-02-emphasis-01);
+}
+.surface-level-02-emphasis-02 {
+  color: var(--surface-level-02-emphasis-02);
+}
+.surface-level-02-emphasis-03 {
+  color: var(--surface-level-02-emphasis-03);
+}
+.surface-level-02-emphasis-opaque-00 {
+  color: var(--surface-level-02-emphasis-opaque-00);
+}
+.surface-level-02-emphasis-opaque-01 {
+  color: var(--surface-level-02-emphasis-opaque-01);
+}
+.surface-level-02-emphasis-opaque-02 {
+  color: var(--surface-level-02-emphasis-opaque-02);
+}
+.surface-level-02-emphasis-opaque-03 {
+  color: var(--surface-level-02-emphasis-opaque-03);
+}
+.surface-signal-action-emphasis-00 {
+  color: var(--surface-signal-action-emphasis-00);
+}
+.surface-signal-action-emphasis-01 {
+  color: var(--surface-signal-action-emphasis-01);
+}
+.surface-signal-action-emphasis-03 {
+  color: var(--surface-signal-action-emphasis-03);
+}
+.surface-signal-action-emphasis-04 {
+  color: var(--surface-signal-action-emphasis-04);
+}
+.surface-signal-caution-emphasis-00 {
+  color: var(--surface-signal-caution-emphasis-00);
+}
+.surface-signal-caution-emphasis-01 {
+  color: var(--surface-signal-caution-emphasis-01);
+}
+.surface-signal-caution-emphasis-03 {
+  color: var(--surface-signal-caution-emphasis-03);
+}
+.surface-signal-caution-emphasis-04 {
+  color: var(--surface-signal-caution-emphasis-04);
+}
+.surface-signal-go-emphasis-00 {
+  color: var(--surface-signal-go-emphasis-00);
+}
+.surface-signal-go-emphasis-01 {
+  color: var(--surface-signal-go-emphasis-01);
+}
+.surface-signal-go-emphasis-03 {
+  color: var(--surface-signal-go-emphasis-03);
+}
+.surface-signal-go-emphasis-04 {
+  color: var(--surface-signal-go-emphasis-04);
+}
+.surface-signal-guide-emphasis-00 {
+  color: var(--surface-signal-guide-emphasis-00);
+}
+.surface-signal-guide-emphasis-01 {
+  color: var(--surface-signal-guide-emphasis-01);
+}
+.surface-signal-guide-emphasis-03 {
+  color: var(--surface-signal-guide-emphasis-03);
+}
+.surface-signal-guide-emphasis-04 {
+  color: var(--surface-signal-guide-emphasis-04);
+}
+.surface-signal-stop-emphasis-00 {
+  color: var(--surface-signal-stop-emphasis-00);
+}
+.surface-signal-stop-emphasis-01 {
+  color: var(--surface-signal-stop-emphasis-01);
+}
+.surface-signal-stop-emphasis-03 {
+  color: var(--surface-signal-stop-emphasis-03);
+}
+.surface-signal-stop-emphasis-04 {
+  color: var(--surface-signal-stop-emphasis-04);
+}
+.surface-spectrum-saffron-emphasis-00 {
+  color: var(--surface-spectrum-saffron-emphasis-00);
+}
+.surface-spectrum-saffron-emphasis-01 {
+  color: var(--surface-spectrum-saffron-emphasis-01);
+}
+.surface-spectrum-saffron-emphasis-03 {
+  color: var(--surface-spectrum-saffron-emphasis-03);
+}
+.surface-spectrum-saffron-emphasis-04 {
+  color: var(--surface-spectrum-saffron-emphasis-04);
+}
+.surface-spectrum-ocean-emphasis-00 {
+  color: var(--surface-spectrum-ocean-emphasis-00);
+}
+.surface-spectrum-ocean-emphasis-01 {
+  color: var(--surface-spectrum-ocean-emphasis-01);
+}
+.surface-spectrum-ocean-emphasis-03 {
+  color: var(--surface-spectrum-ocean-emphasis-03);
+}
+.surface-spectrum-ocean-emphasis-04 {
+  color: var(--surface-spectrum-ocean-emphasis-04);
+}
+.surface-spectrum-peony-emphasis-00 {
+  color: var(--surface-spectrum-peony-emphasis-00);
+}
+.surface-spectrum-peony-emphasis-01 {
+  color: var(--surface-spectrum-peony-emphasis-01);
+}
+.surface-spectrum-peony-emphasis-03 {
+  color: var(--surface-spectrum-peony-emphasis-03);
+}
+.surface-spectrum-peony-emphasis-04 {
+  color: var(--surface-spectrum-peony-emphasis-04);
+}
+.surface-spectrum-cinnamon-emphasis-00 {
+  color: var(--surface-spectrum-cinnamon-emphasis-00);
+}
+.surface-spectrum-cinnamon-emphasis-01 {
+  color: var(--surface-spectrum-cinnamon-emphasis-01);
+}
+.surface-spectrum-cinnamon-emphasis-03 {
+  color: var(--surface-spectrum-cinnamon-emphasis-03);
+}
+.surface-spectrum-cinnamon-emphasis-04 {
+  color: var(--surface-spectrum-cinnamon-emphasis-04);
+}
+.surface-spectrum-lichen-emphasis-00 {
+  color: var(--surface-spectrum-lichen-emphasis-00);
+}
+.surface-spectrum-lichen-emphasis-01 {
+  color: var(--surface-spectrum-lichen-emphasis-01);
+}
+.surface-spectrum-lichen-emphasis-03 {
+  color: var(--surface-spectrum-lichen-emphasis-03);
+}
+.surface-spectrum-lichen-emphasis-04 {
+  color: var(--surface-spectrum-lichen-emphasis-04);
+}
+.surface-spectrum-aurora-emphasis-00 {
+  color: var(--surface-spectrum-aurora-emphasis-00);
+}
+.surface-spectrum-aurora-emphasis-01 {
+  color: var(--surface-spectrum-aurora-emphasis-01);
+}
+.surface-spectrum-aurora-emphasis-03 {
+  color: var(--surface-spectrum-aurora-emphasis-03);
+}
+.surface-spectrum-aurora-emphasis-04 {
+  color: var(--surface-spectrum-aurora-emphasis-04);
+}
+.surface-spectrum-wisteria-emphasis-00 {
+  color: var(--surface-spectrum-wisteria-emphasis-00);
+}
+.surface-spectrum-wisteria-emphasis-01 {
+  color: var(--surface-spectrum-wisteria-emphasis-01);
+}
+.surface-spectrum-wisteria-emphasis-03 {
+  color: var(--surface-spectrum-wisteria-emphasis-03);
+}
+.surface-spectrum-wisteria-emphasis-04 {
+  color: var(--surface-spectrum-wisteria-emphasis-04);
+}
+.element-action-primary-emphasis-00 {
+  color: var(--element-action-primary-emphasis-00);
+}
+.element-action-primary-emphasis-01 {
+  color: var(--element-action-primary-emphasis-01);
+}
+.element-action-primary-emphasis-03 {
+  color: var(--element-action-primary-emphasis-03);
+}
+.element-action-primary-emphasis-04 {
+  color: var(--element-action-primary-emphasis-04);
+}
+.element-action-secondary-emphasis-00 {
+  color: var(--element-action-secondary-emphasis-00);
+}
+.element-action-secondary-emphasis-01 {
+  color: var(--element-action-secondary-emphasis-01);
+}
+.element-action-secondary-emphasis-03 {
+  color: var(--element-action-secondary-emphasis-03);
+}
+.element-action-secondary-emphasis-04 {
+  color: var(--element-action-secondary-emphasis-04);
+}
+.element-emphasis-00 {
+  color: var(--element-emphasis-00);
+}
+.element-emphasis-01 {
+  color: var(--element-emphasis-01);
+}
+.element-emphasis-02 {
+  color: var(--element-emphasis-02);
+}
+.element-emphasis-03 {
+  color: var(--element-emphasis-03);
+}
+.element-reverse-emphasis-00 {
+  color: var(--element-reverse-emphasis-00);
+}
+.element-reverse-emphasis-01 {
+  color: var(--element-reverse-emphasis-01);
+}
+.element-reverse-emphasis-02 {
+  color: var(--element-reverse-emphasis-02);
+}
+.element-reverse-emphasis-03 {
+  color: var(--element-reverse-emphasis-03);
+}
+.element-signal-caution-emphasis-00 {
+  color: var(--element-signal-caution-emphasis-00);
+}
+.element-signal-caution-emphasis-01 {
+  color: var(--element-signal-caution-emphasis-01);
+}
+.element-signal-caution-emphasis-03 {
+  color: var(--element-signal-caution-emphasis-03);
+}
+.element-signal-caution-emphasis-04 {
+  color: var(--element-signal-caution-emphasis-04);
+}
+.element-signal-go-emphasis-00 {
+  color: var(--element-signal-go-emphasis-00);
+}
+.element-signal-go-emphasis-01 {
+  color: var(--element-signal-go-emphasis-01);
+}
+.element-signal-go-emphasis-03 {
+  color: var(--element-signal-go-emphasis-03);
+}
+.element-signal-go-emphasis-04 {
+  color: var(--element-signal-go-emphasis-04);
+}
+.element-signal-guide-emphasis-00 {
+  color: var(--element-signal-guide-emphasis-00);
+}
+.element-signal-guide-emphasis-01 {
+  color: var(--element-signal-guide-emphasis-01);
+}
+.element-signal-guide-emphasis-03 {
+  color: var(--element-signal-guide-emphasis-03);
+}
+.element-signal-guide-emphasis-04 {
+  color: var(--element-signal-guide-emphasis-04);
+}
+.element-signal-stop-emphasis-00 {
+  color: var(--element-signal-stop-emphasis-00);
+}
+.element-signal-stop-emphasis-01 {
+  color: var(--element-signal-stop-emphasis-01);
+}
+.element-signal-stop-emphasis-03 {
+  color: var(--element-signal-stop-emphasis-03);
+}
+.element-signal-stop-emphasis-04 {
+  color: var(--element-signal-stop-emphasis-04);
+}
+.element-spectrum-saffron-emphasis-00 {
+  color: var(--element-spectrum-saffron-emphasis-00);
+}
+.element-spectrum-saffron-emphasis-01 {
+  color: var(--element-spectrum-saffron-emphasis-01);
+}
+.element-spectrum-saffron-emphasis-03 {
+  color: var(--element-spectrum-saffron-emphasis-03);
+}
+.element-spectrum-saffron-emphasis-04 {
+  color: var(--element-spectrum-saffron-emphasis-04);
+}
+.element-spectrum-ocean-emphasis-00 {
+  color: var(--element-spectrum-ocean-emphasis-00);
+}
+.element-spectrum-ocean-emphasis-01 {
+  color: var(--element-spectrum-ocean-emphasis-01);
+}
+.element-spectrum-ocean-emphasis-03 {
+  color: var(--element-spectrum-ocean-emphasis-03);
+}
+.element-spectrum-ocean-emphasis-04 {
+  color: var(--element-spectrum-ocean-emphasis-04);
+}
+.element-spectrum-peony-emphasis-00 {
+  color: var(--element-spectrum-peony-emphasis-00);
+}
+.element-spectrum-peony-emphasis-01 {
+  color: var(--element-spectrum-peony-emphasis-01);
+}
+.element-spectrum-peony-emphasis-03 {
+  color: var(--element-spectrum-peony-emphasis-03);
+}
+.element-spectrum-peony-emphasis-04 {
+  color: var(--element-spectrum-peony-emphasis-04);
+}
+.element-spectrum-cinnamon-emphasis-00 {
+  color: var(--element-spectrum-cinnamon-emphasis-00);
+}
+.element-spectrum-cinnamon-emphasis-01 {
+  color: var(--element-spectrum-cinnamon-emphasis-01);
+}
+.element-spectrum-cinnamon-emphasis-03 {
+  color: var(--element-spectrum-cinnamon-emphasis-03);
+}
+.element-spectrum-cinnamon-emphasis-04 {
+  color: var(--element-spectrum-cinnamon-emphasis-04);
+}
+.element-spectrum-lichen-emphasis-00 {
+  color: var(--element-spectrum-lichen-emphasis-00);
+}
+.element-spectrum-lichen-emphasis-01 {
+  color: var(--element-spectrum-lichen-emphasis-01);
+}
+.element-spectrum-lichen-emphasis-03 {
+  color: var(--element-spectrum-lichen-emphasis-03);
+}
+.element-spectrum-lichen-emphasis-04 {
+  color: var(--element-spectrum-lichen-emphasis-04);
+}
+.element-spectrum-aurora-emphasis-00 {
+  color: var(--element-spectrum-aurora-emphasis-00);
+}
+.element-spectrum-aurora-emphasis-01 {
+  color: var(--element-spectrum-aurora-emphasis-01);
+}
+.element-spectrum-aurora-emphasis-03 {
+  color: var(--element-spectrum-aurora-emphasis-03);
+}
+.element-spectrum-aurora-emphasis-04 {
+  color: var(--element-spectrum-aurora-emphasis-04);
+}
+.element-spectrum-wisteria-emphasis-00 {
+  color: var(--element-spectrum-wisteria-emphasis-00);
+}
+.element-spectrum-wisteria-emphasis-01 {
+  color: var(--element-spectrum-wisteria-emphasis-01);
+}
+.element-spectrum-wisteria-emphasis-03 {
+  color: var(--element-spectrum-wisteria-emphasis-03);
+}
+.element-spectrum-wisteria-emphasis-04 {
+  color: var(--element-spectrum-wisteria-emphasis-04);
+}
+.element-spectrum-all {
+  color: var(--element-spectrum-all);
+}
+.always-black-emphasis-00 {
+  color: var(--always-black-emphasis-00);
+}
+.always-black-emphasis-01 {
+  color: var(--always-black-emphasis-01);
+}
+.always-black-emphasis-02 {
+  color: var(--always-black-emphasis-02);
+}
+.always-black-emphasis-03 {
+  color: var(--always-black-emphasis-03);
+}
+.always-white-emphasis-00 {
+  color: var(--always-white-emphasis-00);
+}
+.always-white-emphasis-01 {
+  color: var(--always-white-emphasis-01);
+}
+.always-white-emphasis-02 {
+  color: var(--always-white-emphasis-02);
+}
+.always-white-emphasis-03 {
+  color: var(--always-white-emphasis-03);
+}
+.navigation-drawer-surface {
+  color: var(--navigation-drawer-surface);
+}
+.navigation-rail-surface {
+  color: var(--navigation-rail-surface);
+}

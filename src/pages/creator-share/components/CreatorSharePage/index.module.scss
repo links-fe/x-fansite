@@ -1,0 +1,199 @@
+.creator-share-page {
+  height: 100%;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .page-tabbar {
+      position: absolute;
+      top: 30px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 12px;
+      .tabbar-right {
+        display: flex;
+        gap: 8px;
+      }
+    }
+  }
+
+  &__content {
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 188px);
+    // overflow-y: auto;
+    border-radius: 12px 12px 0 0;
+    padding: 12px;
+
+    .creator-btn-wrap {
+      display: flex;
+      justify-content: right;
+      gap: 8px;
+      .creator-follow {
+        font-size: 16px;
+      }
+    }
+
+    .creator-avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: -24px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .creator-info {
+      margin: 8px 0 0 0;
+      .creator-name {
+        display: flex;
+        margin-bottom: 4px;
+        align-items: center;
+        color: var(--element-emphasis-00);
+        font: var(--typography-text-body1-strong);
+        &-icon {
+          margin: 0 4px;
+          font-size: 20px;
+        }
+        &-id {
+          color: var(--element-emphasis-01);
+          font: var(--typography-text-body2-base);
+        }
+      }
+
+      .creator-desc {
+        color: var(--element-emphasis-01);
+        font: var(--typography-text-body2-base);
+      }
+    }
+
+    .post-wrap {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #f2f2f2;
+      position: relative;
+      border-radius: 16px;
+      padding: 16px;
+      .post-pointed {
+        position: absolute;
+        background-color: #f2f2f2;
+        width: 12px;
+        height: 12px;
+        top: -6px;
+        left: 24px;
+        transform: rotate(45deg);
+      }
+      .post-info {
+        display: flex;
+        .post-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .post-text {
+            color: var(--element-emphasis-00);
+            font: var(--typography-text-body1-base);
+          }
+          .post-time {
+            color: var(--element-emphasis-01);
+            font: var(--typography-text-body2-base);
+          }
+        }
+        .post-video {
+          height: 128px;
+          width: 128px;
+          border-radius: 16px;
+          overflow: hidden;
+          position: relative;
+          .post-video-time {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            background-color: var(--light-brand-primary-02);
+            color: #fff;
+            font: var(--typography-text-body2-strong);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+
+    .dots-wrap {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      .dot-item {
+        margin-top: 12px;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        background-color: var(--element-emphasis-02);
+        &:first-child {
+          background-color: var(--element-emphasis-00);
+        }
+      }
+    }
+
+    .chat-tips {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      .chat-avatar {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .chat-tips-text {
+        color: var(--element-emphasis-01);
+        font: var(--typography-text-body2-strong);
+      }
+    }
+
+    .chat-input {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 60px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .chat-input-btn {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+      }
+    }
+  }
+}

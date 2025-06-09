@@ -1,0 +1,20 @@
+@import '@/styles/variables.scss';
+
+.page-mobile {
+  height: 100%;
+  overflow: hidden;
+
+  .page-header {
+    height: $page-header-height;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-content {
+    background-color: #fff;
+    height: calc(100% - $page-header-height);
+    overflow-y: auto;
+  }
+}
