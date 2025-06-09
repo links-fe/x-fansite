@@ -1,0 +1,64 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      env_var:
+        description: 'env version'
+        required: false
+      runId:
+        description: 'runId'
+        required: true
+      id:
+        description: 'id'
+        required: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Pick Publish Folder
+        id: pick_publish_folder
+        run: |
+          BRANCH=${GITHUB_REF#refs/heads/}
+          if [ $BRANCH == "release/test" ]; then
+            echo "folder=test" >> $GITHUB_OUTPUT
+          else
+            echo "folder=dev" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload
+        id: upload
+        run: |
+          FOLDER=${{ steps.pick_publish_folder.outputs.folder }}
+          aws s3 sync ${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}} ${{vars.TARGET_BUCKET_NAME}}/$FOLDER/ --exclude \"*.html\" \
+          && aws s3 cp ${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}}/ ${{vars.TARGET_BUCKET_NAME}}/$FOLDER --recursive --exclude \"*\" --include \"*.html\" --cache-control no-cache \
+          && echo "upload_result=success" >> $GITHUB_OUTPUT || echo "upload_result=failure" >> $GITHUB_OUTPUT
+        
+      - name: Post Result
+        uses: fjogeleit/http-request-action@v1
+        with:
+          method: POST
+          url: '${{ vars.FE_API }}/hb/publish/update'
+          data: '{
+            "result": "${{ steps.upload.outputs.upload_result }}",
+            "id": "${{ github.event.inputs.id }}",
+            "releaseRunId": "${{ github.run_id }}",
+            "sourceBucket": "${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}}",
+            "slack": {
+              "env_var": "${{ github.event.inputs.env_var }}"
+            }
+          }'
+          customHeaders: '{"Content-Type": "application/json"}'
+      

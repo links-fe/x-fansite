@@ -1,0 +1,73 @@
+name: Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: 'unique id'
+        required: false
+        default: ''
+      env_var:
+        description: 'env version'
+        required: false
+        default: ''
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Post Result
+        uses: fjogeleit/http-request-action@v1
+        with:
+          method: POST
+          url: '${{ vars.FE_API }}/hb/repo/build/update'
+          data: '{
+            "runId": "${{ github.run_id }}",
+            "inputs": ${{ toJson(github.event.inputs) }}
+          }'
+          customHeaders: '{"Content-Type": "application/json"}'
+          timeout: 15000
+          maskResponse: true
+
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      
+      - name: Post Result
+        uses: fjogeleit/http-request-action@v1
+        with:
+          method: POST
+          url: '${{ vars.FE_API }}/hb/repo/build/update'
+          data: '{
+            "runId": "${{ github.run_id }}",
+            "inputs": ${{ toJson(github.event.inputs) }}
+          }'
+          customHeaders: '{"Content-Type": "application/json"}'
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22'
+
+      - name: Setup Yarn Install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Build
+        run: |
+          if [ "${{ github.event.inputs.env_var }}" != "" ]; then
+            custom_env_version=${{ github.event.inputs.env_var }} version=${{ github.event.inputs.version }} run_id=${{ github.run_id }} ${{ vars.BUILD_SCRIPT }}
+          else
+            run_id=${{ github.run_id }} ${{ vars.BUILD_SCRIPT }}
+          fi
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Upload AWS
+        run: aws s3 sync dist ${{ vars.DIST_AWS_BUCKET_NAME }}/${{ github.run_id }}
