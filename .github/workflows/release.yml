@@ -20,7 +20,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-        # 检出代码仓库，后续步骤需要代码上下文
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -28,52 +27,38 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ vars.AWS_REGION }}
-        # 配置 AWS CLI 所需凭证和区域
 
       - name: Pick Publish Folder
         id: pick_publish_folder
         run: |
-          echo "当前分支：${GITHUB_REF#refs/heads/}"
           BRANCH=${GITHUB_REF#refs/heads/}
-          if [ "$BRANCH" = "release/test" ]; then
-            echo "分支匹配 release/test，发布文件夹设置为 test"
+          if [ $BRANCH == "release/test" ]; then
             echo "folder=test" >> $GITHUB_OUTPUT
           else
-            echo "分支不匹配，发布文件夹设置为 dev"
             echo "folder=dev" >> $GITHUB_OUTPUT
           fi
-        # 根据分支决定发布目录，结果通过 GITHUB_OUTPUT 传递给后续步骤
 
-      - name: Upload to S3
+      - name: Upload
         id: upload
         run: |
-          set -e  # 遇到错误立即退出
-
           FOLDER=${{ steps.pick_publish_folder.outputs.folder }}
-          RUN_ID=${{ github.event.inputs.runId }}
-
-          echo "开始上传文件"
-          echo "发布目录: $FOLDER"
-          echo "runId: $RUN_ID"
-
-          echo "同步除 *.html 外的文件..."
-          aws s3 sync "s3://${{ vars.DIST_AWS_BUCKET_NAME }}/$RUN_ID" "s3://${{ vars.TARGET_BUCKET_NAME }}/$FOLDER/" --exclude "*.html"
-
-          echo "上传 *.html 文件，并设置缓存策略为 no-store..."
-          aws s3 cp "s3://${{ vars.DIST_AWS_BUCKET_NAME }}/$RUN_ID/" "s3://${{ vars.TARGET_BUCKET_NAME }}/$FOLDER/" --recursive --exclude "*" --include "*.html" --cache-control no-store
-
-          echo "上传完成，写入上传结果状态"
-          echo "upload_result=success" >> $GITHUB_OUTPUT
-        continue-on-error: false
-        # 上传文件到目标桶，失败时停止流程
-
-      - name: Upload Result
-        run: |
-          echo "上传状态：${{ steps.upload.outputs.upload_result }}"
-          if [ "${{ steps.upload.outputs.upload_result }}" = "success" ]; then
-            echo "文件上传成功 🎉"
-          else
-            echo "文件上传失败 ❌"
-            exit 1
-          fi
-        # 打印上传结果，失败则让作业失败
+          aws s3 sync ${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}} ${{vars.TARGET_BUCKET_NAME}}/$FOLDER/ --exclude \"*.html\" \
+          && aws s3 cp ${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}}/ ${{vars.TARGET_BUCKET_NAME}}/$FOLDER --recursive --exclude \"*\" --include \"*.html\" --cache-control no-store \
+          && echo "upload_result=success" >> $GITHUB_OUTPUT || echo "upload_result=failure" >> $GITHUB_OUTPUT
+        
+      # - name: Post Result
+      #   uses: fjogeleit/http-request-action@v1
+      #   with:
+      #     method: POST
+      #     url: '${{ vars.FE_API }}/hb/publish/update'
+      #     data: '{
+      #       "result": "${{ steps.upload.outputs.upload_result }}",
+      #       "id": "${{ github.event.inputs.id }}",
+      #       "releaseRunId": "${{ github.run_id }}",
+      #       "sourceBucket": "${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}}",
+      #       "slack": {
+      #         "env_var": "${{ github.event.inputs.env_var }}"
+      #       }
+      #     }'
+      #     customHeaders: '{"Content-Type": "application/json"}'
+      
