@@ -43,7 +43,7 @@ jobs:
         run: |
           FOLDER=${{ steps.pick_publish_folder.outputs.folder }}
           aws s3 sync ${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}} ${{vars.TARGET_BUCKET_NAME}}/$FOLDER/ --exclude \"*.html\" \
-          && aws s3 cp ${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}}/ ${{vars.TARGET_BUCKET_NAME}}/$FOLDER --recursive --exclude \"*\" --include \"*.html\" --cache-control no-cache \
+          && aws s3 cp ${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}}/ ${{vars.TARGET_BUCKET_NAME}}/$FOLDER --recursive --exclude \"*\" --include \"*.html\" --cache-control no-store \
           && echo "upload_result=success" >> $GITHUB_OUTPUT || echo "upload_result=failure" >> $GITHUB_OUTPUT
         
       - name: Post Result

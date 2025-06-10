@@ -32,27 +32,23 @@ jobs:
 
       - name: Checkout Repository
         uses: actions/checkout@v2
-      
-      - name: Post Result
-        uses: fjogeleit/http-request-action@v1
-        with:
-          method: POST
-          url: '${{ vars.FE_API }}/hb/repo/build/update'
-          data: '{
-            "runId": "${{ github.run_id }}",
-            "inputs": ${{ toJson(github.event.inputs) }}
-          }'
-          customHeaders: '{"Content-Type": "application/json"}'
-
+        
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '22'
 
+      - name: Create .npmrc
+        run: |
+          echo "@hbdevs:registry=https://registry.npmjs.org/" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
+          echo "//registry.npmjs.org/:always-auth=true" >> .npmrc
+
       - name: Setup Yarn Install
         uses: borales/actions-yarn@v4
         with:
           cmd: install
+          
 
       - name: Build
         run: |
