@@ -7,6 +7,10 @@ on:
         description: 'unique id'
         required: false
         default: ''
+      run_id:
+        description: 'run id'
+        required: false
+        default: ''
       env_var:
         description: 'env version'
         required: false
@@ -23,7 +27,7 @@ jobs:
           method: POST
           url: '${{ vars.FE_API }}/hb/repo/build/update'
           data: '{
-            "runId": "${{ github.run_id }}",
+            "runId": "${{ github.event.inputs.run_id }}",
             "inputs": ${{ toJson(github.event.inputs) }}
           }'
           customHeaders: '{"Content-Type": "application/json"}'
@@ -53,9 +57,9 @@ jobs:
       - name: Build
         run: |
           if [ "${{ github.event.inputs.env_var }}" != "" ]; then
-            custom_env_version=${{ github.event.inputs.env_var }} version=${{ github.event.inputs.version }} run_id=${{ github.run_id }} ${{ vars.BUILD_SCRIPT }}
+            custom_env_version=${{ github.event.inputs.env_var }} run_id=${{ github.event.inputs.run_id }} ${{ vars.BUILD_SCRIPT }}
           else
-            run_id=${{ github.run_id }} ${{ vars.BUILD_SCRIPT }}
+            run_id=${{ github.event.inputs.run_id }} ${{ vars.BUILD_SCRIPT }}
           fi
 
       - name: Configure AWS credentials
@@ -66,4 +70,4 @@ jobs:
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Upload AWS
-        run: aws s3 sync dist ${{ vars.DIST_AWS_BUCKET_NAME }}/${{ github.run_id }}
+        run: aws s3 sync dist ${{ vars.DIST_AWS_BUCKET_NAME }}/${{ github.event.inputs.run_id }}
