@@ -18,7 +18,7 @@ function ChatItem(props: Iprops) {
 
   const toMessagePage = async () => {
     // 跳转
-    router.push(`/chat/${toUserId}`)
+    router.push(`/message/${toUserId}`)
     // 设置选中
     setActiveContactId(toUserId)
     // 恢复缓存

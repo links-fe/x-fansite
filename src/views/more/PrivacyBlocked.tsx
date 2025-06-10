@@ -3,7 +3,6 @@
 import { Avatar, Button, cln, Drawer, DrawerClose, DrawerFooter, Loading } from '@x-vision/design'
 import { useEffect, useRef, useState } from 'react'
 import { BlockedUser, useBlockedValue } from './PrivacyBlocked.data'
-import { MobileNoTabbarLayout, PcMenuLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { postApiRelationUnblockUser } from '@/services/relation'
 import Div100vh from 'react-div-100vh'
@@ -130,6 +129,3 @@ export default function PrivacyBlocked({ title = PAGE_NAMES.BLOCKED, className, 
     </PageContent>
   )
 }
-
-PrivacyBlocked.PcLayout = PcMenuLayout
-PrivacyBlocked.MobileLayout = MobileNoTabbarLayout

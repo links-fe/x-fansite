@@ -4,7 +4,6 @@ import { useUpdate } from 'ahooks'
 import { Icon } from '@x-vision/icons'
 import { Loading, Text } from '@x-vision/design'
 import VerificationCode from '@/components/VerificationCode'
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import XButton from '@/components/XButton'
 import SetNewPassword from './SetNewPassword'
@@ -180,7 +179,4 @@ const ChangePasswordPage = (props: IProps) => {
     </div>
   )
 }
-
-ChangePasswordPage.PcLayout = PcMenuLayout
-ChangePasswordPage.MobileLayout = MobileNoTabbarLayout
 export default ChangePasswordPage

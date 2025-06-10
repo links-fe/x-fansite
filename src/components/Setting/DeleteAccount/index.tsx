@@ -3,7 +3,6 @@
 import { useMemo, useState } from 'react'
 import { useRouter } from 'next/router'
 import { Button, Cell, RadioGroupItem, RadioGroupPrimitive, Textarea } from '@x-vision/design'
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import DeleteAccountConfirm from './Confirm'
 import { classMerge } from '@/utils'
@@ -94,6 +93,3 @@ export default function DeleteAccount(props: IProps) {
     </div>
   )
 }
-
-DeleteAccount.PcLayout = PcMenuLayout
-DeleteAccount.MobileLayout = MobileNoTabbarLayout

@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { InputDemo, IconDemo } from '@/components/XVisionDemo'
-import { DemoLayout } from '@/components/Layout/DemoLayout'
 
 export default function Page() {
   return (
@@ -28,6 +27,3 @@ export default function Page() {
     </div>
   )
 }
-
-Page.PcLayout = DemoLayout
-Page.MobileLayout = DemoLayout

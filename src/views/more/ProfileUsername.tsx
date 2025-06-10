@@ -1,4 +1,3 @@
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { ALERT_MESSAGES } from './constants/alert-messages'
 import { ProfileFieldInput } from '@/components/Setting/UserProfileFieldInput'
@@ -39,6 +38,3 @@ export default function ProfileUsername({ title = PAGE_NAMES.USERNAME, ...props 
     </PageContent>
   )
 }
-
-ProfileUsername.PcLayout = PcMenuLayout
-ProfileUsername.MobileLayout = MobileNoTabbarLayout

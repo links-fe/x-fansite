@@ -5,7 +5,6 @@ import { useUserInfo } from '@/models/user'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import SetNewEmail from '@/components/Setting/Account/ChangeEmail/SetNewEmail'
 import VerificationEmail from '@/components/Setting/Account/ChangeEmail/VerificationEmail'
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { classMerge } from '@/utils'
 interface IProps {
   className?: string
@@ -95,8 +94,5 @@ const ChangeEmail = (props: IProps) => {
     </div>
   )
 }
-
-ChangeEmail.PcLayout = PcMenuLayout
-ChangeEmail.MobileLayout = MobileNoTabbarLayout
 
 export default ChangeEmail

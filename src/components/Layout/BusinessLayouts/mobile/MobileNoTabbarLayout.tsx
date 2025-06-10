@@ -1,5 +1,5 @@
 import Div100vh from 'react-div-100vh'
-import { AppLayout } from './AppLayout'
+import { AppLayout } from '../../AppLayout'
 
 export function MobileNoTabbarLayout({ children }: { children: React.ReactNode }) {
   return (

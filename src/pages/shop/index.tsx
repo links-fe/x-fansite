@@ -1,7 +1,5 @@
 'use client'
 
-import { MobileTabbarLayout, PcMenuLayout } from '@/components/Layout'
-
 export default function Page() {
   return (
     <div>
@@ -9,5 +7,3 @@ export default function Page() {
     </div>
   )
 }
-Page.PcLayout = PcMenuLayout
-Page.MobileLayout = MobileTabbarLayout

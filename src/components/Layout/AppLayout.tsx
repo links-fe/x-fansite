@@ -27,8 +27,10 @@ import NoUserAbnormalDrawer from '@/components/LoginRegister/ForgotPassword/Rese
 import { useNoUserAbnormalVisible } from '@/models/abnormalDrawer'
 import ErrorBoundary from '@/pages/error'
 import RestoreAccount from '@/components/RestoreAccount'
-import AudioInitialize from '../AudioInitialize'
-import RouterLoading from './components/RouterLoading'
+import AppInit from './components/AppInit'
+import { getRouterConfig } from '@/router'
+import { useLayoutStore } from '@/models/layout'
+import { PcLoginLayout, PcMenuLayout } from './BusinessLayouts'
 export function AppLayout({
   children,
 }: Readonly<{
@@ -40,6 +42,9 @@ export function AppLayout({
   const visibleRegisterLoginPageDialog = useRegisterLoginPageDialogVisible()
   const visibleGlobalError = useVisibleGlobalError()
   const noUserAbnormalVisible = useNoUserAbnormalVisible()
+  const routerConfigInfo = getRouterConfig(location.pathname)
+  const enablePcMode = useLayoutStore((state) => state.enablePcMode)
+
   useEffect(() => {
     // console.log('appStore.hadInit', appStore.hadInit)
     if (appStore.hadInit || appStore.isAppIniting) {
@@ -56,10 +61,10 @@ export function AppLayout({
       hideGlobalLoginModal()
       return
     }
-    if (/* process.env.NODE_ENV !== 'development' &&  */ !location.pathname.includes('/creator')) {
+    if (/* process.env.NODE_ENV !== 'development' &&  */ routerConfigInfo.isAuth) {
       showRegisterLoginPageDialog()
     }
-  }, [appStore.hadInit, userInfo?.loginMode])
+  }, [appStore.hadInit, userInfo?.loginMode, location.pathname])
 
   useOpenResetPassword()
 
@@ -82,7 +87,13 @@ export function AppLayout({
 
     // 访问非creator相关的需要登录的页面，直接换起login page页组件 （creator等后置点击触发登录态检测等，走GlobalLoginDrawer逻辑）
     if (visibleRegisterLoginPageDialog) {
-      return <LoginPage className="fixed w-screen h-screen top-0 bottom-0 left-0 z-10 bg-white" />
+      return enablePcMode ? (
+        <PcLoginLayout>
+          <LoginPage className="bg-white" />
+        </PcLoginLayout>
+      ) : (
+        <LoginPage className="fixed w-screen h-screen top-0 bottom-0 left-0 z-10 bg-white" />
+      )
     }
 
     if (userInfo?.closePending) {
@@ -93,13 +104,16 @@ export function AppLayout({
     function renderChildren() {
       return <Suspense fallback={<div>Loading ... -- children</div>}>{children}</Suspense>
     }
+    // 游客路由权限控制
+    console.log(userInfo?.loginMode, '-------------------->>>>')
+
+    if (routerConfigInfo.isAuth && userInfo?.loginMode === EnumLoginMode.Guest) return <></>
 
     return (
       <>
-        <AudioInitialize />
         <GlobalLoginDrawer />
         <SettingPasswordDrawer />
-        <RouterLoading />
+        <AppInit />
         {renderChildren()}
       </>
     )

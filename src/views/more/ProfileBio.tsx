@@ -1,4 +1,3 @@
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { ProfileFieldInput } from '@/components/Setting/UserProfileFieldInput'
 import { useBioUpdate } from '@/views/more/Profile.data'
 import { Button } from '@x-vision/design'
@@ -28,6 +27,3 @@ export default function ProfileBio({ title = PAGE_NAMES.BIO, ...props }: PagePro
     </PageContent>
   )
 }
-
-ProfileBio.PcLayout = PcMenuLayout
-ProfileBio.MobileLayout = MobileNoTabbarLayout

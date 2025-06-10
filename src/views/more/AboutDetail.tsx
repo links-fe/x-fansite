@@ -1,6 +1,5 @@
 'use client'
 
-import { MobileNoTabbarLayout, PcMenuLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PageProps } from '@/types/page'
 import { cln } from '@x-vision/design'
@@ -36,6 +35,3 @@ export default function AboutDetail({ title = `Terms & safety`, className, onBac
     </div>
   )
 }
-
-AboutDetail.PcLayout = PcMenuLayout
-AboutDetail.MobileLayout = MobileNoTabbarLayout

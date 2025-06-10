@@ -1,6 +1,5 @@
 'use client'
 
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { Button, Cell, CellGroup, cln } from '@x-vision/design'
 import { Icon } from '@x-vision/icons'
@@ -37,6 +36,3 @@ export default function Notifications({ title = PAGE_NAMES.NOTIFICATIONS, ...pro
     </PageContent>
   )
 }
-
-Notifications.PcLayout = PcMenuLayout
-Notifications.MobileLayout = MobileNoTabbarLayout

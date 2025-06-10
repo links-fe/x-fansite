@@ -1,6 +1,5 @@
 'use client'
 
-import { MobileTabbarLayout, PcMenuLayout } from '@/components/Layout'
 import { ShareLinkPage } from './components/ShareLinkPage'
 import { Suspense } from 'react'
 
@@ -13,5 +12,3 @@ export default function Page() {
     </Suspense>
   )
 }
-Page.PcLayout = PcMenuLayout
-Page.MobileLayout = MobileTabbarLayout

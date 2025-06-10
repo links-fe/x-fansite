@@ -1,4 +1,3 @@
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { updateMyProfile, useMyProfileStore } from '@/models/user-profile/profile'
 import {
@@ -211,6 +210,3 @@ export default function Page({ title = PAGE_NAMES.LOCATION, className, ...props 
     </PageContent>
   )
 }
-
-Page.PcLayout = PcMenuLayout
-Page.MobileLayout = MobileNoTabbarLayout

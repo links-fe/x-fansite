@@ -5,7 +5,7 @@ import Div100vh from 'react-div-100vh'
 import { getActiveContactId } from '@/models/message'
 import { getActiveAccountId } from '@/models/user'
 import { setChatInfoByUserIdApi } from '@/models/chat'
-import { setActiveContactId } from '@/models/message/model'
+import { initMessageListModel, setActiveContactId } from '@/models/message/model'
 import InfoSettingDrawer from './Drawer/InfoSettingDrawer'
 import MessageListView from './MessageListView'
 import { refreshMessageListStoreState } from '@/models/message'
@@ -26,6 +26,7 @@ function MessageList() {
   useEffect(() => {
     onMessageListEnter()
     return () => {
+      initMessageListModel()
       onMessageListLeave()
     }
   }, [toUserId])

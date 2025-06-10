@@ -1,4 +1,5 @@
 import { generateAccountCacheStoreFn } from '@/common/cmv'
+import { getMessageUnreadCountApi } from '@/services/chat'
 import { create } from 'zustand'
 
 interface IChatModel {
@@ -33,6 +34,13 @@ export const setTotalUnreadCountUpdateTime = (accountId: string, updateTime: num
 
 export const getTotalUnreadCountUpdateTime = (accountId: string) => {
   return chatStore.getState(accountId)?.updateTime || 0
+}
+
+export const initTotalUnreadCount = (accountId: string) => {
+  if (!accountId) return
+  getMessageUnreadCountApi().then((res) => {
+    setTotalUnreadCount(accountId, res.totalUnreadCount)
+  })
 }
 
 export const useChatModels = () => {

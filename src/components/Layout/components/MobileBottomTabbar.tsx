@@ -8,9 +8,9 @@ import { usePathname, useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 
 const routeMenuConfig = {
+  home: '/home',
+  hooks: '/hooks',
   message: '/message',
-  create: '/create',
-  wallet: '/wallet',
   more: '/more',
 }
 
@@ -21,16 +21,21 @@ export function MobileBottomTabbar() {
   const { totalUnreadCount } = useChatModels()
   const userId = getActiveAccountId()!
 
-  // 初始化totalUnreadCount
-  useEffect(() => {
-    getMessageUnreadCountApi().then((res) => {
-      if (userId) {
-        setTotalUnreadCount(userId, res.totalUnreadCount)
-      }
-    })
-  }, [])
-
   const tabs = [
+    {
+      key: 'home',
+      label: 'Home',
+      activeIcon: <Icon icon="x:Home05StyleSolid" />,
+      inactiveIcon: <Icon icon="x:Home05StyleStroke" />,
+      content: 'home',
+    },
+    {
+      key: 'hooks',
+      label: 'Chat Hooks',
+      activeIcon: <Icon icon="x:HookStyleSolid" />,
+      inactiveIcon: <Icon icon="x:HookStyleStroke" />,
+      content: 'hooks',
+    },
     {
       key: 'message',
       label: 'Messages',
@@ -39,19 +44,19 @@ export function MobileBottomTabbar() {
       extra: userId ? totalUnreadCount || null : null,
       content: 'message',
     },
-    {
-      key: 'create',
-      label: 'Create',
-      activeIcon: <Icon icon="x:PlusSignCircleStyleSolid" />,
-      inactiveIcon: <Icon icon="x:PlusSignCircleStyleStroke" />,
-    },
-    {
-      key: 'wallet',
-      label: 'Wallet',
-      activeIcon: <Icon icon="x:Wallet03StyleSolid" />,
-      inactiveIcon: <Icon icon="x:Wallet03StyleStroke" />,
-      content: 'wallet',
-    },
+    // {
+    //   key: 'create',
+    //   label: 'Create',
+    //   activeIcon: <Icon icon="x:PlusSignCircleStyleSolid" />,
+    //   inactiveIcon: <Icon icon="x:PlusSignCircleStyleStroke" />,
+    // },
+    // {
+    //   key: 'wallet',
+    //   label: 'Wallet',
+    //   activeIcon: <Icon icon="x:Wallet03StyleSolid" />,
+    //   inactiveIcon: <Icon icon="x:Wallet03StyleStroke" />,
+    //   content: 'wallet',
+    // },
     {
       key: 'more',
       label: 'More',

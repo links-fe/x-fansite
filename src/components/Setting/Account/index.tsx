@@ -2,7 +2,6 @@
 import { Cell, CellGroup } from '@x-vision/design'
 import { Icon } from '@x-vision/icons'
 import { useRouter } from 'next/router'
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import ChangePassword from '@/components/Setting/Account/ChangePassword'
 import ChangeEmail from '@/components/Setting/Account/ChangeEmail'
@@ -81,14 +80,14 @@ export default function Account(props: IProps) {
 
       {showChangePasswordPage && (
         <ChangePassword
-          className="absolute top-0 left-0"
+          className="absolute top-0 left-0 w-full"
           visible={showChangePasswordPage}
           back={closeChangePasswordPage}
         ></ChangePassword>
       )}
       {showChangeEmailPage && (
         <ChangeEmail
-          className="absolute top-0 left-0"
+          className="absolute top-0 left-0 w-full"
           visible={showChangeEmailPage}
           back={closeChangeEmailPage}
         ></ChangeEmail>
@@ -96,7 +95,7 @@ export default function Account(props: IProps) {
 
       {showThirdPartyAccounts && (
         <ThirdPartyAccounts
-          className="absolute top-0 left-0"
+          className="absolute top-0 left-0 w-full"
           visible={showThirdPartyAccounts}
           back={closeThirdPartyAccounts}
         ></ThirdPartyAccounts>
@@ -104,6 +103,3 @@ export default function Account(props: IProps) {
     </div>
   )
 }
-
-Account.PcLayout = PcMenuLayout
-Account.MobileLayout = MobileNoTabbarLayout

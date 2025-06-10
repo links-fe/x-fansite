@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 import { Button } from '@x-vision/design'
 
 interface PageHeaderProps {
-  title: string | React.ReactNode
+  title?: string | React.ReactNode
   right?: React.ReactNode
   left?: React.ReactNode
   onBack?: () => void

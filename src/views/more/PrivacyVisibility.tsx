@@ -5,7 +5,6 @@ import { Cell, cln, Loading, RadioGroupItem, RadioGroupPrimitive } from '@x-visi
 import { useRouter } from 'next/router'
 import { PRIVACY_ITEMS } from './constants/menu-routes'
 import { useVisibilityValue } from './PrivacyVisibility.data'
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { PAGE_NAMES } from './constants/page-names'
 import { PageProps } from '@/types/page'
@@ -58,6 +57,3 @@ export default function PrivacyVisibility({
     </PageContent>
   )
 }
-
-PrivacyVisibility.PcLayout = PcMenuLayout
-PrivacyVisibility.MobileLayout = MobileNoTabbarLayout

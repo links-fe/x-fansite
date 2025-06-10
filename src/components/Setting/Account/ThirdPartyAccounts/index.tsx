@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { Loading, Text } from '@x-vision/design'
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import ThirdPartyAccountsCard from './Card'
 import DeleteThirdPartyAccountSetPasswordDrawer from './DeleteThirdPartyAccountSetPasswordDrawer'
@@ -126,8 +125,5 @@ const ThirdPartyAccounts = (props: IProps) => {
     </div>
   )
 }
-
-ThirdPartyAccounts.PcLayout = PcMenuLayout
-ThirdPartyAccounts.MobileLayout = MobileNoTabbarLayout
 
 export default ThirdPartyAccounts

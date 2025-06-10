@@ -18,7 +18,7 @@ function ChatListView(props: { userId: string }) {
   useChatListScroll({ userId, scrollRef })
 
   return (
-    <div className="flex flex-col h-full flex-1 md:max-w-[350px] overflow-hidden">
+    <div className="flex flex-col h-full flex-1 overflow-hidden">
       <div className="flex my-(--sizing-named-micro) px-(--sizing-named-mini)">
         <span style={{ font: 'var(--typography-text-heading4-strong)' }} className="text-(--element-emphasis-00)">
           Messages

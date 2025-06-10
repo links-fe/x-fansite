@@ -1,7 +1,6 @@
 'use client'
 
 import { GOOGLE_SCOPE } from '@/constants'
-import { DemoLayout } from '@/components/Layout/DemoLayout'
 
 export default function Page() {
   const handleSignIn = () => {
@@ -20,5 +19,3 @@ export default function Page() {
     </button>
   )
 }
-Page.PcLayout = DemoLayout
-Page.MobileLayout = DemoLayout

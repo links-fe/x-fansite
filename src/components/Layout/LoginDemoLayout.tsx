@@ -30,7 +30,7 @@ const LoginDemoLayout = ({
   }
 
   return (
-    <AppLayout>
+    <>
       {userInfo?.loginMode === EnumLoginMode.Normal && (
         <div className="flex items-center justify-center h-20">
           <XButton onClick={handleLogout}>Logout</XButton>
@@ -47,7 +47,7 @@ const LoginDemoLayout = ({
       </div>
 
       {children}
-    </AppLayout>
+    </>
   )
 }
 export default LoginDemoLayout

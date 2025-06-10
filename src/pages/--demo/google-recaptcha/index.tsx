@@ -1,5 +1,4 @@
 'use client'
-import { DemoLayout } from '@/components/Layout/DemoLayout'
 import React, { useCallback, useEffect, useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 
@@ -161,5 +160,3 @@ export default function Page() {
     </form>
   )
 }
-Page.PcLayout = DemoLayout
-Page.MobileLayout = DemoLayout

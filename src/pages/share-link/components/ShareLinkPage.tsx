@@ -16,7 +16,7 @@ export function ShareLinkPage() {
     if (domainLock) return
     if (!searchParams?.get('cid')) {
       // 直接跳首页
-      router.push('/')
+      // router.push('/')
       return
     }
     router.push(`/creator-share/${searchParams?.get('cid')}?id=${searchParams?.get('id')}`)

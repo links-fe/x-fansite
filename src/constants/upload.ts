@@ -74,6 +74,7 @@ export const audioTypes = [
 ]
 
 export const allFileTypes = [...imageTypes, ...videoTypes, ...audioTypes]
+export const notAudioFileTypes = [...imageTypes, ...videoTypes]
 
 export const imageMaxSize = 50 * 1024 * 1024 // 50M
 export const videoMaxSize = 500 * 1024 * 1024 // 500M

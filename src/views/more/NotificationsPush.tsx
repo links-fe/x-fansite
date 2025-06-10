@@ -1,6 +1,5 @@
 'use client'
 
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { Cell, cln, Loading, Switch } from '@x-vision/design'
 import { useMemo, useState } from 'react'
@@ -43,6 +42,3 @@ export default function NotificationsPush({ title = PAGE_NAMES.NOTIFICATION_PUSH
     </PageContent>
   )
 }
-
-NotificationsPush.PcLayout = PcMenuLayout
-NotificationsPush.MobileLayout = MobileNoTabbarLayout

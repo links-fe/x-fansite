@@ -24,7 +24,7 @@ interface IMessageListModel {
   messageListBackBottomVisible: boolean
 }
 
-export const useMessageListModel = create<IMessageListModel>(() => ({
+const defaultMessageListModel: () => IMessageListModel = () => ({
   activeContactId: undefined,
   shouldMessageListMount: true,
   infoSettingDrawerVisible: false,
@@ -35,7 +35,13 @@ export const useMessageListModel = create<IMessageListModel>(() => ({
   mediaHistoryDrawerVisible: false,
   reportMessageDrawerVisible: false,
   messageListBackBottomVisible: false,
-}))
+})
+
+export const useMessageListModel = create<IMessageListModel>(() => defaultMessageListModel())
+
+export const initMessageListModel = () => {
+  useMessageListModel.setState(defaultMessageListModel())
+}
 
 export const setActiveContactId = (contactId: string) => {
   useMessageListModel.setState({

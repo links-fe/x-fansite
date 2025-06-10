@@ -8,11 +8,11 @@ const Upload = () => {
       return
     }
 
-    uploadChatFileUtils.upload({
-      // 会话id chat上传文件必传
-      subId: '123',
-      fileList,
-    })
+    // uploadChatFileUtils.upload({
+    //   // 会话id chat上传文件必传
+    //   subId: '123',
+    //   fileList,
+    // })
   }
 
   const handleMyProfileFileUploadChange = (e: React.ChangeEvent<HTMLInputElement>) => {

@@ -1,8 +1,8 @@
 import {
-  allFileTypes,
   audioTypes,
   imageMaxSize,
   imageTypes,
+  notAudioFileTypes,
   uploadSceneEnum,
   videoMaxSize,
   videoTypes,
@@ -21,7 +21,7 @@ export const uploadChatFileUtils = {
         subId,
         file,
         uploadRuleConfig: {
-          fileTypes: allFileTypes,
+          fileTypes: notAudioFileTypes,
           imgTypes: imageTypes,
           imgMaxSize: imageMaxSize,
           videoTypes: videoTypes,

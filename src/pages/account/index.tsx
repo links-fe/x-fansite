@@ -1,5 +1,4 @@
 'use client'
-import { MobileTabbarLayout, PcMenuLayout } from '@/components/Layout'
 import Link from 'next/link'
 
 export default function Page() {
@@ -11,6 +10,3 @@ export default function Page() {
     </div>
   )
 }
-
-Page.PcLayout = PcMenuLayout
-Page.MobileLayout = MobileTabbarLayout

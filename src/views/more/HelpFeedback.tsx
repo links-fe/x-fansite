@@ -1,6 +1,5 @@
 'use client'
 
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { ErrorAlert } from '@/components/Setting/ErrorAlert'
 import { ProfileFieldInput } from '@/components/Setting/UserProfileFieldInput'
@@ -55,6 +54,3 @@ export default function HelpFeedback({ title = PAGE_NAMES.FEEDBACK, className, o
     </div>
   )
 }
-
-HelpFeedback.PcLayout = PcMenuLayout
-HelpFeedback.MobileLayout = MobileNoTabbarLayout

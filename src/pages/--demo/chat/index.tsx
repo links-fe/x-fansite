@@ -91,6 +91,3 @@ export default function Page() {
     </div>
   )
 }
-
-// Page.PcLayout = AppLayout
-// Page.MobileLayout = AppLayout

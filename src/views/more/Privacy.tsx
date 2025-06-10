@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useBlockedValue } from './PrivacyBlocked.data'
 import { useVisibilityValue } from './PrivacyVisibility.data'
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { CellGroupItems } from '@/components/Setting/CellGroupItems'
 import { PAGE_NAMES } from './constants/page-names'
 import { PageProps } from '@/types/page'
@@ -63,6 +62,3 @@ export default function Privacy({ title = PAGE_NAMES.PRIVACY, ...props }: PagePr
     </PageContent>
   )
 }
-
-Privacy.PcLayout = PcMenuLayout
-Privacy.MobileLayout = MobileNoTabbarLayout

@@ -1,25 +1,14 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import MenuItem from './MenuItem'
 import { usePcCollapseMenu } from '@/models/layout'
-import { setTotalUnreadCount, useChatModels } from '@/models/chat/model'
-import { getActiveAccountId } from '@/models/user'
-import { getMessageUnreadCountApi } from '@/services/chat'
+import { useChatModels } from '@/models/chat/model'
 import { Icon } from '@x-vision/icons/index.js'
 import { Badge } from '@x-vision/design/index.js'
 
 function PcMessageMenuItem() {
   const pcMenu = usePcCollapseMenu()
   const { totalUnreadCount } = useChatModels()
-  const userId = getActiveAccountId()!
 
-  // 初始化totalUnreadCount
-  useEffect(() => {
-    getMessageUnreadCountApi().then((res) => {
-      if (userId) {
-        setTotalUnreadCount(userId, res.totalUnreadCount)
-      }
-    })
-  }, [])
   return (
     <MenuItem
       path={`/message`}

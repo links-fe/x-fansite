@@ -1,4 +1,3 @@
-import { PcMenuLayout, MobileTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { MORE_ITEMS } from './constants/menu-routes'
 import { CellSpaceItems } from '@/components/Setting/CellGroupItems'
@@ -14,6 +13,3 @@ export default function More({ title = PAGE_NAMES.MORE, className, onBack, ...pr
     </div>
   )
 }
-
-More.PcLayout = PcMenuLayout
-More.MobileLayout = MobileTabbarLayout

@@ -17,11 +17,9 @@ const LoginDemoPage = () => {
     showRegisterLoginPageDialog()
   }, [appStore.hadInit, userInfo?.loginMode])
   return (
-    <div>
+    <LoginDemoLayout>
       <h1>login demo page</h1>
-    </div>
+    </LoginDemoLayout>
   )
 }
-LoginDemoPage.PcLayout = LoginDemoLayout
-LoginDemoPage.MobileLayout = LoginDemoLayout
 export default LoginDemoPage

@@ -1,6 +1,5 @@
 'use client'
 
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PAGE_NAMES } from './constants/page-names'
 import { PageProps } from '@/types/page'
 import { Cell, cln, Text } from '@x-vision/design'
@@ -197,6 +196,3 @@ export default function Profile({ title = PAGE_NAMES.PROFILE, className, onBack,
     </PageContent>
   )
 }
-
-Profile.PcLayout = PcMenuLayout
-Profile.MobileLayout = MobileNoTabbarLayout

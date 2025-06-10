@@ -60,7 +60,7 @@
 		"@hb-common/feci-env": "^1.0.5",
 		"@hb-common/prettier-config": "^0.0.6",
 		"@next/bundle-analyzer": "^15.2.1",
-		"@tailwindcss/postcss": "^4.0.9",
+		"@tailwindcss/postcss": "^4.1.8",
 		"@types/google.accounts": "^0.0.15",
 		"@types/jest": "^29.5.14",
 		"@types/lodash": "^4.17.16",
@@ -79,7 +79,7 @@
 		"postcss": "^8",
 		"react-div-100vh": "^0.7.0",
 		"sass": "^1.84.0",
-		"tailwindcss": "^4.0.9",
+		"tailwindcss": "^4.1.8",
 		"ts-jest": "^29.3.2",
 		"typescript": "^5",
 		"uuid": "^11.1.0"

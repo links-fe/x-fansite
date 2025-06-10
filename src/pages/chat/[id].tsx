@@ -1,5 +1,4 @@
 'use client'
-import { PcMenuLayout } from '@/components/Layout'
 import { useLayoutStore } from '@/models/layout'
 import ChatList from '@/module/ChatList'
 import MessageList from '@/module/MessageList'
@@ -19,5 +18,3 @@ export default function Page() {
     </div>
   )
 }
-
-Page.PcLayout = PcMenuLayout

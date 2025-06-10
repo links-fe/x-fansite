@@ -2,7 +2,6 @@
 import React from 'react'
 import { loginGuard, useGlobalLoginModalVisible } from '@/models/user'
 import XButton from '@/components/XButton'
-import LoginDemoLayout from '@/components/Layout/LoginDemoLayout'
 const Page = () => {
   const visibleGlobalLoginModal = useGlobalLoginModalVisible()
   const handleBuy = async () => {
@@ -19,6 +18,4 @@ const Page = () => {
     </div>
   )
 }
-Page.PcLayout = LoginDemoLayout
-Page.MobileLayout = LoginDemoLayout
 export default Page

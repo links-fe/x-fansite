@@ -1,6 +1,4 @@
 'use client'
-
-import { MobileNoTabbarLayout, PcMenuLayout } from '@/components/Layout'
 import LogoutDrawer from '@/components/LogoutDrawer'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { Button, cln, Navbar } from '@x-vision/design'
@@ -58,19 +56,16 @@ export default function Setting({ title = PAGE_NAMES.Setting, className, onBack,
       )}
 
       {showAccountPage && (
-        <Account visible={showAccountPage} back={closeAccountPage} className="absolute top-0 left-0"></Account>
+        <Account visible={showAccountPage} back={closeAccountPage} className="absolute top-0 left-0 w-full"></Account>
       )}
       {showDeleteAccountPage && (
         <DeleteAccount
           visible={showDeleteAccountPage}
           back={closeDeleteAccountPage}
-          className="absolute top-0 left-0"
+          className="absolute top-0 left-0 w-full"
         ></DeleteAccount>
       )}
       <LogoutDrawer visible={showLogoutDrawer} close={closeLogoutDrawer}></LogoutDrawer>
     </div>
   )
 }
-
-Setting.PcLayout = PcMenuLayout
-Setting.MobileLayout = MobileNoTabbarLayout

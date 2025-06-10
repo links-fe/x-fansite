@@ -1,6 +1,5 @@
 'use client'
 
-import { PcMenuLayout, MobileNoTabbarLayout } from '@/components/Layout'
 import { PageHeader } from '@/components/PageHeader/PageHeader'
 import { Button, Cell, CellGroup, cln } from '@x-vision/design'
 import { Icon } from '@x-vision/icons'
@@ -33,6 +32,3 @@ export default function HelpFaq({ title, className, onBack, ...props }: PageProp
     </div>
   )
 }
-
-HelpFaq.PcLayout = PcMenuLayout
-HelpFaq.MobileLayout = MobileNoTabbarLayout

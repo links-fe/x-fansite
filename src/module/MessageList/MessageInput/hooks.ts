@@ -31,20 +31,20 @@ export const useMessageInputViewHooks = (props: Iprops) => {
   const sendDisabled = () => {
     const hasUnFinish = checkCurrentChatNotHasUploaded({ userId, subId: toUserId })
     if (contactMeta?.reject) return true
-    // if (price && price > 0) {
-    //   // TODO 设置了价格 需要判断素材库素材
-    //   return true
-    // } else {
-    // 文本符合要求
-    if (content?.trim()?.length > 0 && content?.trim()?.length <= 1000) {
-      if (!mediaList || mediaList.length === 0) return false
-      return hasUnFinish
-    }
-    // 有素材 或者 有音频
-    if (mediaList && mediaList.length > 0) {
+    if (price && price > 0) {
+      // TODO 设置了价格 需要判断素材库素材
+      if (mediaList?.length > 0) {
+        return hasUnFinish
+      }
+      return true
+    } else if (mediaList && mediaList.length > 0) {
+      // 有素材 或者 有音频
       console.log('mediaList', [...mediaList], mediaList[0].isFinish, hasUnFinish)
       // 存在未上传完成的素材
       return hasUnFinish
+    } else if (content?.trim()?.length > 0 && content?.trim()?.length <= 1000) {
+      // 文本符合要求
+      return false
     }
     // }
     return true
@@ -86,9 +86,6 @@ export const useMessageInputViewHooks = (props: Iprops) => {
     let msgType = MessageType.TEXT
     if (mediaList?.length) {
       msgType = MessageType.VAULT
-    }
-    if (state.price && state.price > 0) {
-      msgType = MessageType.PAID
     }
     // 发送消息并获取临时ID
     sendMessage({

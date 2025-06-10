@@ -5,7 +5,6 @@ import { useState } from 'react'
 
 import photo from '@/assets/creator-share/creator-bg-default.jpeg'
 import XButton from '@/components/XButton'
-import { DemoLayout } from '@/components/Layout/DemoLayout'
 
 const DISPLAY_WIDTH = 400
 const DISPLAY_HEIGHT = 400
@@ -64,5 +63,3 @@ export default function Page() {
     </div>
   )
 }
-Page.PcLayout = DemoLayout
-Page.MobileLayout = DemoLayout
