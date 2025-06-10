@@ -46,19 +46,19 @@ jobs:
           && aws s3 cp ${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}}/ ${{vars.TARGET_BUCKET_NAME}}/$FOLDER --recursive --exclude \"*\" --include \"*.html\" --cache-control no-store \
           && echo "upload_result=success" >> $GITHUB_OUTPUT || echo "upload_result=failure" >> $GITHUB_OUTPUT
         
-      - name: Post Result
-        uses: fjogeleit/http-request-action@v1
-        with:
-          method: POST
-          url: '${{ vars.FE_API }}/hb/publish/update'
-          data: '{
-            "result": "${{ steps.upload.outputs.upload_result }}",
-            "id": "${{ github.event.inputs.id }}",
-            "releaseRunId": "${{ github.run_id }}",
-            "sourceBucket": "${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}}",
-            "slack": {
-              "env_var": "${{ github.event.inputs.env_var }}"
-            }
-          }'
-          customHeaders: '{"Content-Type": "application/json"}'
+      # - name: Post Result
+      #   uses: fjogeleit/http-request-action@v1
+      #   with:
+      #     method: POST
+      #     url: '${{ vars.FE_API }}/hb/publish/update'
+      #     data: '{
+      #       "result": "${{ steps.upload.outputs.upload_result }}",
+      #       "id": "${{ github.event.inputs.id }}",
+      #       "releaseRunId": "${{ github.run_id }}",
+      #       "sourceBucket": "${{vars.DIST_AWS_BUCKET_NAME}}/${{github.event.inputs.runId}}",
+      #       "slack": {
+      #         "env_var": "${{ github.event.inputs.env_var }}"
+      #       }
+      #     }'
+      #     customHeaders: '{"Content-Type": "application/json"}'
       
